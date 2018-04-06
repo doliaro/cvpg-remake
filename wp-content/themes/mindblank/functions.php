@@ -52,7 +52,7 @@ function mapi_var_dump($var)
 }
 
 // mind Blank navigation
-function mindblank_nav()
+function cvpg_nav()
 {
     wp_nav_menu(
         array(
@@ -69,7 +69,7 @@ function mindblank_nav()
             'after' => '',
             'link_before' => '',
             'link_after' => '',
-            'items_wrap' => '<ul>%3$s</ul>',
+            'items_wrap' => '<ul id="menu">%3$s</ul>',
             'depth' => 0,
             'walker' => ''
         )
@@ -89,16 +89,17 @@ function mindblank_header_scripts()
         wp_register_script('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array('jquery', 'popper'), '1.0.0');
         wp_enqueue_script('bootstrap');
 
-
         wp_register_script('fontawesome-5', get_template_directory_uri() . '/js/fontawesome-all.js', array(), '1.0', true);
         wp_enqueue_script('fontawesome-5');
 
         wp_register_script('slideout-js', get_template_directory_uri() . '/js/slideout.min.js', array(), '1.0');
         wp_enqueue_script('slideout-js');
 
-
         wp_register_script('slick-slider', get_template_directory_uri() . '/js/slick.min.js', array(), '1.0');
         wp_enqueue_script('slick-slider');
+
+        wp_register_script('directory', get_template_directory_uri() . '/js/directory.js', array('jquery'), '1.0.0', false);
+        wp_enqueue_script('directory');
     }
 }
 
@@ -118,6 +119,12 @@ function mindblank_styles()
     wp_enqueue_style('mindblankcssmin');
 
     wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,400i,500,900', array(), '1.0');
+    wp_enqueue_style('google-fonts');
+
+    wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Titillium+Web', array(), '1.0');
+    wp_enqueue_style('google-fonts');
+
+    wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Josefin+Sans', array(), '1.0');
     wp_enqueue_style('google-fonts');
 
 
@@ -337,6 +344,7 @@ add_filter('style_loader_tag', 'mind_style_remove'); // Remove 'text/css' from e
 add_filter('post_thumbnail_html', 'remove_thumbnail_dimensions', 10); // Remove width and height dynamic attributes to thumbnails
 add_filter('post_thumbnail_html', 'remove_width_attribute', 10); // Remove width and height dynamic attributes to post images
 add_filter('image_send_to_editor', 'remove_width_attribute', 10); // Remove width and height dynamic attributes to post images
+add_filter( 'facetwp_proximity_store_distance', '__return_true' ); // Enable post distance in FacetWP
 
 // Remove Filters
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
@@ -352,3 +360,46 @@ add_shortcode('mind_shortcode_demo_2', 'mind_shortcode_demo_2'); // Place [mind_
 /*------------------------------------*\
     ShortCode Functions
 \*------------------------------------*/
+function set_latlon($post_id, $post, $update) {
+
+        $map = get_post_meta($post_id, 'map_location', true);
+
+        if (!empty($map)) {
+            update_post_meta( $post_id, 'loc_lat', $map['lat'] );
+            update_post_meta( $post_id, 'loc_lng', $map['lng'] );
+        }
+
+    }
+    add_action('save_post', 'set_latlon', 90, 3);
+
+
+/*------------------------------------*\
+    ACF Functions
+\*------------------------------------*/
+
+function my_acf_init()
+{
+
+    acf_update_setting('google_api_key', 'AIzaSyAtGfWMP7UZ-0k3oPapHlWLEQkCbsmFno4');
+}
+
+add_action('acf/init', 'my_acf_init');
+
+add_action('wp_head','woocommerce_js');
+
+/*------------------------------------*\
+    Javascript Functions
+\*------------------------------------*/
+
+function woocommerce_js()
+{ // break out of php ?>
+
+jQuery(document).ready(function($) {
+    $(".woocommerce-cart").html(function(i, val) {
+    return val.replace(" →", "");
+    });
+    $(".woocommerce-cart").html(function(i, val) {
+    return val.replace("← ", "");
+    });
+});
+<?php } // break back into php

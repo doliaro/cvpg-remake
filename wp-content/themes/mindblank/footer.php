@@ -1,17 +1,28 @@
-			<!-- footer -->
+<!-- footer -->
+    <div class="container-fluid" style="background: #025223;">
+        <div class="container">
 			<footer class="bottom-footer container-fluid" role="contentinfo">
                 <div class="row">
-                    <div class="col">
-                        <p class="align-middle"> &copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.</p>
+                    <ul class="col footer-links center-logo">
+                        <a href="/forms"><strong>Links & Forms</strong></a>
+                        <br>
+                        <a href="/board_of_directors"><strong>Board of Directors</strong></a>
+                        <br>
+                        <a href="/forms"><strong>Contact</strong></a>
+
+                    </ul>
+                    <div class="col-6 footer-copyright center-logo">
+                        <p class="align-middle"> &copy; <?php echo date('Y'); ?> Copyright Citrus Valley Physicians Group</p>
                     </div>
-                    <div class="col">
-                        <img src="<?php echo get_template_directory_uri() . '/img/mindshare.svg'; ?>" title="Hand Crafted by Mindshare Labs, Inc" alt="Mindshare Labs, Inc">
+                    <div class="col footer-media center-logo">
+                        <i class="fab fa-2x fa-twitter"></i>
+                        <i class="fab fa-2x fa-facebook"></i>
+                        <i class="fab fa-2x fa-linkedin"></i>
                     </div>
                 </div>
 			</footer>
 			<!-- /footer -->
 
-		</div>
 		</div>
 		<!-- /wrapper //Opened in layout/navigation.php-->
 

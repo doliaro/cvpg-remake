@@ -1,0 +1,71 @@
+<?php
+//Template Name: Board of Directors
+get_header();
+include 'layout/top-header.php';
+include 'layout/brand.php';
+
+?>
+    <div class="container">
+    <div class="row">
+        <div id="main" class="col-md-12">
+
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+                <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> itemscope itemtype="http://schema.org/BlogPosting">
+                    <header class="article-header page-header">
+
+                        <br>
+                        <h1 class="entry-title page-title" itemprop="headline"><?php the_title(); ?></h1>
+                        <h3 class="entry-sub-title"><?php the_field('sub_title'); ?></h3>
+
+                        <hr class="horiz-line">
+
+
+                    </header>
+                    <section class="content clearfix" itemprop="articleBody">
+                        <?php the_content(); ?>
+                        <?php
+                        $i = 1;
+                        if( have_rows('board_of_directors') ):
+                            echo '<div class="row">';
+                            $i = 1;
+                            echo '<div class="row staff-members">';
+                            // loop through the rows of data
+                            while ( have_rows('board_of_directors') ) : the_row();
+                                $image_obj = get_sub_field('image');
+
+                                $name = get_sub_field('name');
+                                $title = get_sub_field('title');
+                                echo '<div class="col-md-4">';
+                                if($image_obj) :
+                                    $image_url = $image_obj['url'];
+
+                                    $image_src = aq_resize($image_url, 350, 250, true);
+                                    echo '<img src="' . $image_src . '"/>';
+                                endif;
+
+                                echo '<h4 class="staff-name">' . $name . '</h4>';
+                                echo '<span class="staff-title">' . $title . '</span>';
+                                echo '</div>';
+                                if($i % 3 == 0) {echo '</div><div class="row">';}
+                                $i++;
+                            endwhile;
+                            echo '</div>';
+                        endif;
+                        echo '</div>';
+
+                        ?>
+                    </section>
+
+                </article>
+
+            <?php endwhile; ?>
+
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
+<?php include 'layout/top-footer.php';
+get_footer();
+
+

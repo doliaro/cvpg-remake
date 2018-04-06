@@ -8,14 +8,14 @@
 // Color system
 //
 
-$primary:       rgb(255, 205, 23);
-$secondary:     rgb(82, 129, 196);
-$success:       rgba(75,175,7, 1);
-$info:          rgb(225, 233, 214);
-$warning:       rgba(201,169,56, 1);
-$danger:        rgba(201,73,73, 1);
-$light:         rgba(220,220,220, 1);
-$dark:          rgba(99, 99, 99, 1);
+$primary-orange: rgb(230, 128, 0);
+$header-green:   rgb(73, 131, 97);
+$success:        rgba(75,175,7, 1);
+$info:           rgb(225, 233, 214);
+$warning:        rgba(201,169,56, 1);
+$danger:         rgba(201,73,73, 1);
+$light:          rgba(220,220,220, 1);
+$dark:           rgba(99, 99, 99, 1);
 
 $grid-gutter-width:           10px;
 // stylelint-disable value-keyword-case
