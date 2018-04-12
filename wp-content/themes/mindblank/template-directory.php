@@ -45,7 +45,7 @@ include 'layout/brand.php';
         $directory = get_field('directory');
 
         if($physicians->have_posts()) : ?>
-            <div id="main" class="col-md-9">
+            <div id="main" class="col-md-8 offset-md-1">
                 <div class="facetwp-template directory-section">
 
                     <?php while ( $physicians->have_posts()): $physicians->the_post(); ?>
@@ -57,17 +57,19 @@ include 'layout/brand.php';
                                 <h4>
                                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
                                 </h4>
-                                <span><?php $primary_care = the_field('primary_care');
+                                <span><i><strong><?php $primary_care = the_field('primary_care');
                                       $specialists = the_field('specialists');
                                       $ancillary = the_field('ancillary');
                                       $capitated_specialists = the_field('capitated_specialists');?>
-                                </span>
+                                </i></strong></span>
                             </div>
 
                             <div class="col-md-4">
                                 <span>Phone: <?php $phone = get_field('phone'); echo $phone; ?></span>
                                 <br>
                                 <span>Fax: <?php $fax = get_field('fax'); echo $fax; ?></span>
+                                <br>
+                                <span>Hours: <?php $fax = get_field('hours'); echo $fax; ?></span>
                             </div>
                             <div class="col-md-4">
                                 <?php $address = get_field('address'); if ($address) : echo $address['address']; endif ?>
