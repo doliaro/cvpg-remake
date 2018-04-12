@@ -43,13 +43,15 @@ hr {
 
 //Navigation Styles
 header.top-header {
-/*  font-size: 1.6em;
-  min-height: 60px;
-  background-color: $primary-orange;*/
   a.icons {
     margin-right: 10px;
   }
 }
+
+.header {
+  background: #e68000;
+}
+
 .slideout-menu{
   background: #498360;
 }
