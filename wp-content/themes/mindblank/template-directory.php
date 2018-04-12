@@ -55,7 +55,7 @@ include 'layout/brand.php';
                         <div class="row">
                             <div class="col-md-4">
                                 <h4>
-                                   <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                                   <a href="<?php the_permalink(); ?>" title="<?php the_field('name'); ?>"><?php the_field('name'); ?></a>
                                 </h4>
                                 <span><i><strong><?php $primary_care = the_field('primary_care');
                                       $specialists = the_field('specialists');
