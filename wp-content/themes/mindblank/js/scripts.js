@@ -44,7 +44,7 @@
 
         jQuery('body').addClass('fade-in');
 
-        jQuery('.facetwp-autocomplete-update').attr('value', 'Go!');
+
 
     });
 

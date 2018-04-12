@@ -8,7 +8,7 @@ include 'layout/brand.php';
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtGfWMP7UZ-0k3oPapHlWLEQkCbsmFno4"></script>
 
-<div class="container">
+<div class="container" style="padding: 20px;">
     <div class="row">
         <div id="main" class="col-md-3">
             <div class="facet-widget">
@@ -47,8 +47,11 @@ include 'layout/brand.php';
         if($physicians->have_posts()) : ?>
             <div id="main" class="col-md-9">
                 <div class="facetwp-template directory-section">
+
                     <?php while ( $physicians->have_posts()): $physicians->the_post(); ?>
-                        <hr class="horiz-line">
+
+                        <!-- <hr class="horiz-line"> -->
+                        <div class="container" style="border-top: solid 1px; padding: 20px;">
                         <div class="row">
                             <div class="col-md-4">
                                 <h4>
@@ -71,7 +74,9 @@ include 'layout/brand.php';
                             </div>
                         </div>
                         <br>
+                        </div>
                     <?php endwhile; ?>
+
                 </div>
             </div>
         <?php endif;?>

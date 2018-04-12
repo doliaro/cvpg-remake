@@ -6238,7 +6238,10 @@ aside.sidebar .sidebar-social svg { padding: 0 5px; }
   .box.box-3 { margin-bottom: 55px; }
   .logo-img { height: 180px; bottom: 51px; }
   .menu-center ul { margin: 20px 40px; }
-  .header { height: 50px; } }
+  .header { height: 50px; }
+  .footer-media { font-size: 9px; }
+  .footer-copyright { font-size: 9px; }
+  .footer-links { line-height: 1; font-size: 11px; } }
 @media (min-width: 992px) and (max-width: 1200px) { .menu-center ul li a { font-size: 15px; }
   .box-3 { margin-bottom: 55px; } }
 /* Define xs styles after defaults so they take precedence */

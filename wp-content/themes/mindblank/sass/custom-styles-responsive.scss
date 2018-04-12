@@ -46,6 +46,7 @@
       padding: 0px;
       font-size: 12px;
     }
+
 }
 
 @media (max-width: 692px) {
@@ -89,6 +90,17 @@
     }
     .header{
       height: 50px;
+    }
+    .footer-media{
+      font-size: 9px;
+    }
+
+    .footer-copyright{
+        font-size: 9px;
+    }
+    .footer-links{
+      line-height: 1;
+      font-size: 11px;
     }
 }
 
