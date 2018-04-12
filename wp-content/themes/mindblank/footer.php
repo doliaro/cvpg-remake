@@ -1,7 +1,7 @@
 <!-- footer -->
     <div class="container-fluid" style="background: #025223;">
         <div class="container">
-			<footer class="bottom-footer container-fluid" role="contentinfo">
+			<footer class="bottom-footer container" role="contentinfo">
                 <div class="row">
                     <ul class="col footer-links center-logo">
                         <a href="/forms"><strong>Links & Forms</strong></a>

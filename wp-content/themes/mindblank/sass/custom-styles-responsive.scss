@@ -31,9 +31,24 @@
 //lg: 992px,
 //xl: 1200px
 @media (max-width: 576px) {
-     .box {
+    .box {
         height: 266px;
         bottom: 40px;
+    }
+    .logo-img {
+        height: 180px;
+        bottom: 25px;
+    }
+}
+
+@media (max-width: 692px) {
+  .box {
+        height: 266px;
+        bottom: 40px;
+    }
+    .logo-img {
+        height: 180px;
+        bottom: 25px;
     }
 }
 
@@ -42,8 +57,12 @@
     .menu-center ul li a {
         font-size: 13px;
     }
-
+    .logo-img {
+        height: 180px;
+        /*bottom: 50.4px;*/
+    }
 }
+
 
 // Medium styles - default: 992px <= x <= 1199px
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -51,9 +70,7 @@
         font-size: 15px;
     }
 
-    .logo-img {
-        height: 180px;
-    }
+
 }
 
 // Large styles - default: 1200px <= x

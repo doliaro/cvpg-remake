@@ -360,17 +360,7 @@ add_shortcode('mind_shortcode_demo_2', 'mind_shortcode_demo_2'); // Place [mind_
 /*------------------------------------*\
     ShortCode Functions
 \*------------------------------------*/
-function set_latlon($post_id, $post, $update) {
 
-        $map = get_post_meta($post_id, 'map_location', true);
-
-        if (!empty($map)) {
-            update_post_meta( $post_id, 'loc_lat', $map['lat'] );
-            update_post_meta( $post_id, 'loc_lng', $map['lng'] );
-        }
-
-    }
-    add_action('save_post', 'set_latlon', 90, 3);
 
 
 /*------------------------------------*\
@@ -385,21 +375,8 @@ function my_acf_init()
 
 add_action('acf/init', 'my_acf_init');
 
-add_action('wp_head','woocommerce_js');
 
 /*------------------------------------*\
     Javascript Functions
 \*------------------------------------*/
 
-function woocommerce_js()
-{ // break out of php ?>
-
-jQuery(document).ready(function($) {
-    $(".woocommerce-cart").html(function(i, val) {
-    return val.replace(" →", "");
-    });
-    $(".woocommerce-cart").html(function(i, val) {
-    return val.replace("← ", "");
-    });
-});
-<?php } // break back into php

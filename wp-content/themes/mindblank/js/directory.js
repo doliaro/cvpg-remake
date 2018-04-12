@@ -12,6 +12,3 @@ function hide_show_facets(facet_id, facet_class){
         }
     });
 }
-
-'#region-facet'
-'.facetwp-facet-regions'

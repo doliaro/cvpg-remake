@@ -62,7 +62,8 @@ include 'layout/brand.php';
                             </div>
 
                             <div class="col-md-4">
-                                <p>Phone: <?php $phone = get_field('phone'); echo $phone; ?></p>
+                                <span>Phone: <?php $phone = get_field('phone'); echo $phone; ?></span>
+                                <br>
                                 <span>Fax: <?php $fax = get_field('fax'); echo $fax; ?></span>
                             </div>
                             <div class="col-md-4">

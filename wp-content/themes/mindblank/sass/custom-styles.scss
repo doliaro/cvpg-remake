@@ -43,16 +43,25 @@ hr {
 
 //Navigation Styles
 header.top-header {
-  font-size: 1.6em;
+/*  font-size: 1.6em;
   min-height: 60px;
-  background-color: $primary-orange;
+  background-color: $primary-orange;*/
   a.icons {
     margin-right: 10px;
   }
 }
+.slideout-menu{
+  background: #498360;
+}
+
+.menu-toggle {
+  font-size: 25px;
+  margin-left: 15px;
+}
 
 .menu-center{
   width: 100%;
+  background:#e68000;
   ul {
     padding: 0;
     margin: auto;
@@ -81,6 +90,10 @@ header.top-header {
   .navbar-right {
     float: right !important;
   }
+}
+
+.navbar-nav{
+  background: #e68000;
 }
 
 //Front page content overlay

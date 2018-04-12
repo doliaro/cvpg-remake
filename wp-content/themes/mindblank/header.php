@@ -37,7 +37,7 @@
 
 <body <?php body_class(); ?>>
 <!-- nav -->
-<nav id="main-nav" class="nav" role="navigation">
+<nav id="main-nav" class="nav slideout-menu" role="navigation">
     <?php cvpg_nav(); ?>
 </nav>
 <div id="main-panel">
