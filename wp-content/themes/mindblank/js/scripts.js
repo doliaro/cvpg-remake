@@ -44,7 +44,7 @@
 
         jQuery('body').addClass('fade-in');
 
-
+        jQuery('.facetwp-autocomplete-update').attr('value', 'Go!');
 
     });
 
@@ -192,7 +192,6 @@ function center_map( map ) {
         // fit to bounds
         map.fitBounds( bounds );
     }
-
 }
 
 /*
@@ -211,14 +210,10 @@ function center_map( map ) {
 var map = null;
 
 $(document).ready(function(){
-
     $('.acf-map').each(function(){
-
         // create map
         map = new_map( $(this) );
-
     });
-
 });
 
 })(jQuery);

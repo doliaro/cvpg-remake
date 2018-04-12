@@ -1,6 +1,7 @@
 function hide_show_facets(facet_id, facet_class){
     jQuery(facet_id).css('cursor','pointer');
     jQuery(facet_class).css('display','none');
+    jQuery('.facetwp-autocomplete-update').attr('value', 'Go!');
 
     jQuery(facet_id).click(function(){
         if ( jQuery(facet_class).css('display') == 'none' ){
@@ -12,3 +13,10 @@ function hide_show_facets(facet_id, facet_class){
         }
     });
 }
+
+
+jQuery(document).ready(function() {
+    setTimeout(function() {
+        jQuery('.facetwp-autocomplete-update').attr('value', 'Go!');
+    }, 100);
+});
