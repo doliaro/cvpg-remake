@@ -6183,13 +6183,15 @@ footer.bottom-footer { min-height: 50px; line-height: 50px; }
 
 .bypostauthor > article .fn:before { content: "\f408"; margin: 0 2px 0 -2px; position: relative; top: -1px; }
 
-.staff-members { margin-bottom: 35px; }
+.staff-members { margin-bottom: 35px; margin: auto; }
+
+.single-staff { margin-bottom: 55px; }
 
 .content { margin-bottom: 60px; }
 
 .staff-name { margin-bottom: 1px; }
 
-.staff-title { margin-bottom: 10px; }
+.staff-title { margin-bottom: 10px; font-size: 14px; }
 
 /* single post */
 .alignleft, img.alignleft { float: left; }

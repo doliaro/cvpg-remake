@@ -36,19 +36,19 @@ include 'layout/brand.php';
 
                                 $name = get_sub_field('name');
                                 $title = get_sub_field('title');
-                                echo '<div class="col-md-4">';
+                                echo '<div class="col-md-3 single-staff">';
                                 if($image_obj) :
                                     $image_url = $image_obj['url'];
 
-                                    $image_src = aq_resize($image_url, 350, 250, true);
+                                    $image_src = aq_resize($image_url, 180, 180, true);
                                     echo '<img src="' . $image_src . '"/>';
                                 endif;
 
-                                echo '<h4 class="staff-name">' . $name . '</h4>';
+                                echo '<h5 class="staff-name">' . $name . '</h5>';
                                 echo '<span class="staff-title">' . $title . '</span>';
                                 echo '</div>';
-                                if($i % 3 == 0) {echo '</div><div class="row">';}
-                                $i++;
+                                // if($i % 3 == 0) {echo '</div><div class="row">';}
+                                // $i++;
                             endwhile;
                             echo '</div>';
                         endif;
