@@ -166,6 +166,6 @@ function recalc_acf_get_latlng( $address ) {
     return array( 'lat' => $lat, 'lng' => $lng );
 }
 function recalc_acf_clean_address( $address ) {
-    $address = preg_replace('/ *(\r\n|\r|\n)+ */', " ", $address); // No linebreaks
+    $address = preg_replace('/ *(\r\n|\r|\n)+ */', " ", $address);
     return $address;
 }
