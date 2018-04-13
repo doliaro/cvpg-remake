@@ -69,7 +69,7 @@ include 'layout/brand.php';
                                 <br>
                                 <span>Fax: <?php $fax = get_field('fax'); echo $fax; ?></span>
                                 <br>
-                                <span>Hours: <?php $fax = get_field('hours'); echo $fax; ?></span>
+                                <span>Hours: <?php $hours = get_field('hours'); echo $hours; ?></span>
                             </div>
                             <div class="col-md-4">
                                 <?php $address = get_field('address'); if ($address) : echo $address['address']; endif ?>
