@@ -39,6 +39,12 @@ include 'layout/brand.php';
                                 echo '<div class="col-md-3 single-staff">';
                                 if($image_obj) :
                                     $image_url = $image_obj['url'];
+                                    $image_type = wp_check_filetype( $image_url );
+                                    // var_dump($image_type['ext']);
+
+                                    if ($image_type['ext'] == 'png') : echo 'PNG';
+                                    else : echo 'JPG';
+                                    endif;
 
                                     $image_src = aq_resize($image_url, 180, 180, true);
                                     echo '<img src="' . $image_src . '"/>';

@@ -14,6 +14,7 @@ include_once 'inc/content-functions.php';
 include_once 'inc/cpt.php';
 include_once 'inc/acf-functions.php';
 include_once 'inc/aq_resize.php';
+include_once 'recalculate-acf-locations.php';
 
 /*------------------------------------*\
     Theme Support

@@ -6215,6 +6215,8 @@ aside.sidebar .sidebar-social svg { padding: 0 5px; }
 
 .logo { text-align: center; }
 
+.physician-name { font-size: 19px; }
+
 .acf-map { width: 70%; height: 400px; border: #ccc solid 1px; }
 
 /* fixes potential theme css conflict */
