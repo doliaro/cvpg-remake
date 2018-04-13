@@ -130,7 +130,7 @@ function recalc_acf_location_lookup( $post_id, $full_address ) {
 function recalc_acf_get_latlng( $address ) {
     // http://stackoverflow.com/a/8633623/470480
     $address = urlencode($address); // Spaces as + signs
-    $request = wp_remote_get("http://maps.google.com/maps/api/geocode/json?address=$address&sensor=false&key=AIzaSyBNmfaf6Js3hvEe1t5Ervd7y5PbkzPNRQ8");
+    $request = wp_remote_get("https://maps.google.com/maps/api/geocode/json?address=$address&sensor=false&key=AIzaSyBNmfaf6Js3hvEe1t5Ervd7y5PbkzPNRQ8");
     $json = wp_remote_retrieve_body( $request );
 
     if ( !$json ) {
