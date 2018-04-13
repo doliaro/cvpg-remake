@@ -2,7 +2,7 @@
 global $ld_recalc;
 $ld_recalc = array(
     'posts_per_run' => 16,
-    'post_types' => array( 'Physicians' ),
+    'post_types' => array( 'physicians' ),
     'scan_key' => 'acf-recalc-scan',
     'scan_identifier' => '2015-09-23', // Change this if you want to scan again in the future.
     'fields' => array(

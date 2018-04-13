@@ -33,3 +33,7 @@
     </div>
 </footer>
 
+<?php $show_post_types = get_post_types(); ?>
+<pre>
+  <?php print_r($show_post_types); ?>
+</pre>
