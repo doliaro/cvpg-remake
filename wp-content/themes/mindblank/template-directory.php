@@ -47,22 +47,27 @@ include 'layout/brand.php';
         if($physicians->have_posts()) : ?>
             <div id="main" class="col-md-8 offset-md-1">
                 <div class="facetwp-template directory-section">
-
-                    <?php while ( $physicians->have_posts()): $physicians->the_post();
-                        $physician_name = the_field('name');
-                        $physician_name_clean = ucfirst(strtolower($physician_name));
-                        ?>
-                        <!-- <hr class="horiz-line"> -->
+                    <?php while ( $physicians->have_posts()): $physicians->the_post(); ?>
                         <div class="container" style="border-top: solid 1px; padding: 20px;">
                         <div class="row">
                             <div class="col-md-4">
                                 <h4>
-                                   <a class="physician-name" href="<?php the_permalink(); ?>" title="<?php the_field('name'); ?>"><?php $physician_name_clean ?></a>
+                                    <?php
+                                    $name = get_field('name');
+                                    $clean = ucwords(strtolower($name));?>
+                                   <a class="physician-name" href="<?php the_permalink(); ?>" title="<?php get_field('name'); ?>"><?php echo $clean; ?></a>
                                 </h4>
-                                <span><i><strong><?php $primary_care = the_field('primary_care');
-                                      $specialists = the_field('specialists');
-                                      $ancillary = the_field('ancillary');
-                                      $capitated_specialists = the_field('capitated_specialists');?>
+                                <span><i><?php
+                                    $primary_care = get_field('primary_care');
+                                    $specialists = get_field('specialists');
+                                    $ancillary = get_field('ancillary');
+                                    $capitated_specialists = get_field('capitated_specialists');
+
+                                    echo ucfirst(strtolower($primary_care));
+                                    echo ucfirst(strtolower($specialists));
+                                    echo ucfirst(strtolower($ancillary));
+                                    echo ucfirst(strtolower($capitated_specialists));
+                                ?>
                                 </i></strong></span>
                             </div>
 
@@ -74,13 +79,12 @@ include 'layout/brand.php';
                                 <span>Hours: <?php $hours = get_field('hours'); echo $hours; ?></span>
                             </div>
                             <div class="col-md-4">
-                                <?php $address = get_field('address'); if ($address) : echo $address['address']; endif ?>
+                                <?php $address = get_field('address'); if ($address) : echo ucwords(strtolower($address['address']));  endif ?>
                             </div>
                         </div>
                         <br>
                         </div>
                     <?php endwhile; ?>
-
                 </div>
             </div>
         <?php endif;?>
