@@ -4,11 +4,10 @@ $ld_recalc = array(
     'posts_per_run' => 50,
     'post_types' => array( 'physicians' ),
     'scan_key' => 'acf-recalc-scan',
-    'scan_identifier' => '2015-09-23', // Change this if you want to scan again in the future.
+    'scan_identifier' => '2015-09-23',
     'fields' => array(
         'google_map' => 'field_5ac2ca97a80ff',
-        // the address from the google_map field will be used first, if it is available. otherwise, these will get used:
-        'address'   => 'field_56031abc0cb98', // address may also include city, state, zip, if those fields are not used.
+        'address'   => 'field_56031abc0cb98',
         'city'      => 'field_56031ad50cb9a',
         'state'     => 'field_56031aec0cb9b',
         'zip'       => 'field_56031b1f0cb9c',
@@ -115,7 +114,6 @@ function recalc_acf_location_lookup( $post_id, $full_address ) {
         $location['lng'] = $coords['lng'];
         $result = update_field( $ld_recalc['fields']['google_map'], $location, $post_id );
         if ( $result ) {
-            // Save lat/long as separate meta keys too.
             update_post_meta( $post_id, 'latitude', $location['lat'] );
             update_post_meta( $post_id, 'longitude', $location['lng'] );
             update_post_meta( $post_id, $ld_recalc['scan_key'], $ld_recalc['scan_identifier'] );
@@ -128,8 +126,7 @@ function recalc_acf_location_lookup( $post_id, $full_address ) {
     return false;
 }
 function recalc_acf_get_latlng( $address ) {
-    // http://stackoverflow.com/a/8633623/470480
-    $address = urlencode($address); // Spaces as + signs
+    $address = urlencode($address);
     $request = wp_remote_get("https://maps.google.com/maps/api/geocode/json?address=$address&sensor=false&key=AIzaSyBNmfaf6Js3hvEe1t5Ervd7y5PbkzPNRQ8");
     $json = wp_remote_retrieve_body( $request );
 
@@ -155,7 +152,6 @@ function recalc_acf_get_latlng( $address ) {
     }
     $lat = $data->{'results'}[0]->{'geometry'}->{'location'}->{'lat'};
     $lng = $data->{'results'}[0]->{'geometry'}->{'location'}->{'lng'};
-    // Value can be negative, so check for specifically 0.
     if ( floatval( $lat ) === 0 || floatval( $lng ) === 0 ) {
         echo '<h2>ERROR! Latitude/Longitude is invalid (exactly zero):</h2>';
         var_dump('Latitude:', $lat);

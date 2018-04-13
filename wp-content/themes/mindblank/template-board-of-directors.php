@@ -48,8 +48,6 @@ include 'layout/brand.php';
                                 echo '<h5 class="staff-name">' . $name . '</h5>';
                                 echo '<span class="staff-title">' . $title . '</span>';
                                 echo '</div>';
-                                // if($i % 3 == 0) {echo '</div><div class="row">';}
-                                // $i++;
                             endwhile;
                             echo '</div>';
                         endif;

@@ -48,14 +48,16 @@ include 'layout/brand.php';
             <div id="main" class="col-md-8 offset-md-1">
                 <div class="facetwp-template directory-section">
 
-                    <?php while ( $physicians->have_posts()): $physicians->the_post(); ?>
-
+                    <?php while ( $physicians->have_posts()): $physicians->the_post();
+                        $physician_name = the_field('name');
+                        $physician_name_clean = ucfirst(strtolower($physician_name));
+                        ?>
                         <!-- <hr class="horiz-line"> -->
                         <div class="container" style="border-top: solid 1px; padding: 20px;">
                         <div class="row">
                             <div class="col-md-4">
                                 <h4>
-                                   <a class="physician-name" href="<?php the_permalink(); ?>" title="<?php the_field('name'); ?>"><?php the_field('name'); ?></a>
+                                   <a class="physician-name" href="<?php the_permalink(); ?>" title="<?php the_field('name'); ?>"><?php $physician_name_clean ?></a>
                                 </h4>
                                 <span><i><strong><?php $primary_care = the_field('primary_care');
                                       $specialists = the_field('specialists');
