@@ -53,7 +53,7 @@
                                 <div class="overlay-text">
                                     <?php the_sub_field('text');?>
                                 </div>
-                            <?php endif ?>;
+                            <?php endif ?>
                         <?php endwhile;
                     }
                 ?>
