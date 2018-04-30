@@ -22,8 +22,8 @@ include 'layout/brand.php';
                     <?php echo facetwp_display( 'facet', 'specialist' ); ?>
                 <h5 id="ancillary-facet" class="facet-label"> Ancillary <i class="fas fa-chevron-down"></i></h5>
                     <?php echo facetwp_display( 'facet', 'ancillary' ); ?>
-                <h5 id="capitated-specialists-facet" class="facet-label"> Capitated Specialists <i class="fas fa-chevron-down"></i></h5>
-                    <?php echo facetwp_display( 'facet', 'capitated_specialist' ); ?>
+                <!-- <h5 id="capitated-specialists-facet" class="facet-label"> Capitated Specialists <i class="fas fa-chevron-down"></i></h5>
+                    <?php echo facetwp_display( 'facet', 'capitated_specialist' ); ?> -->
             </div>
         </div>
         <script>

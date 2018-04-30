@@ -49,9 +49,11 @@
                             </div>
                             <?php the_sub_field('title');?>
                             <br>
-                            <div class="overlay-text">
-                                <?php the_sub_field('text');?>
-                            </div>
+                            <?php if the_sub_field('text');?>
+                                <div class="overlay-text">
+                                    <?php the_sub_field('text');?>
+                                </div>
+                            <?php endif ?>;
                         <?php endwhile;
                     }
                 ?>
