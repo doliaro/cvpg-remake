@@ -49,7 +49,7 @@
                             </div>
                             <?php the_sub_field('title');?>
                             <br>
-                            <?php if the_sub_field('text');?>
+                            <?php if (the_sub_field('text')) : ?>
                                 <div class="overlay-text">
                                     <?php the_sub_field('text');?>
                                 </div>
