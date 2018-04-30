@@ -54,11 +54,6 @@ include 'layout/brand.php';
                     </div>
                 </div>
             </div>
-        <div class="row">
-            <div class="col-10 offset-1">
-                <?php comments_template(); ?>
-            </div>
-        </div>
         <!-- /section -->
     </main>
 
