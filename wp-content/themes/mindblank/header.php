@@ -33,6 +33,17 @@
     <meta name="theme-color" content="#ffffff">
 
     <?php wp_head(); ?>
+    <script>
+    (function($) {
+        $(document).on('facetwp-loaded', function() {
+            if (FWP.loaded) {
+                $('html, body').animate({
+                    scrollTop: $('.facetwp-template').offset().top
+                }, 500);
+            }
+        });
+    })(jQuery);
+    </script>
 </head>
 
 <body <?php body_class(); ?>>

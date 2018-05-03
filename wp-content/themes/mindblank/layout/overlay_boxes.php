@@ -18,9 +18,9 @@
                     }
                 ?>
                 <br>
-                <a href="/directory">
-                    <button type="button" class="overlay-btn btn btn-primary">Learn More</button>
-                </a>
+                <div class="button-wrapper">
+                    <a href="http://google.com" class="overlay-btn btn btn-primary">Learn More</a>
+                </div>
             </div>
             <div class="col-md-4 box box-2">
                 <?php
@@ -40,9 +40,9 @@
                     }
                 ?>
                 <br>
-                <a>
-                    <button type="button" class="overlay-btn btn btn-primary">Learn More</button>
-                </a>
+                <div class="button-wrapper">
+                    <a href="http://google.com" class="overlay-btn btn btn-primary">Learn More</a>
+                </div>
             </div>
             <div class="col-md-4 box box-3">
                 <?php
@@ -62,9 +62,9 @@
                     }
                 ?>
                 <br>
-                <a>
-                    <button type="button" class="overlay-btn btn btn-primary">Learn More</button>
-                </a>
+                <div class="button-wrapper">
+                    <a href="/directory" class="overlay-btn btn btn-primary">Learn More</a>
+                </div>
             </div>
         </div>
     </div> <!-- container -->

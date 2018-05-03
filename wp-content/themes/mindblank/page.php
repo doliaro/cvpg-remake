@@ -43,7 +43,6 @@ include 'layout/brand.php';
 
             </section>
         </div>
-        <?php get_sidebar(); ?>
     </div>
             <!-- /section -->
 </main>
