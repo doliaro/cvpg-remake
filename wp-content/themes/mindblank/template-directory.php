@@ -86,6 +86,7 @@ include 'layout/brand.php';
                         </div>
                     <?php endwhile; ?>
                 </div>
+                <?php echo facetwp_display( 'pager' ); ?>
             </div>
         <?php endif;?>
     </div>

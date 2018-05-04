@@ -4,11 +4,17 @@
 			<footer class="bottom-footer container" role="contentinfo">
                 <div class="row">
                     <ul class="col footer-links center-logo">
-                        <a href="/forms"><strong>Links & Forms</strong></a>
-                        <br>
-                        <a href="/board_of_directors"><strong>Board of Directors</strong></a>
-                        <br>
-                        <a href="/forms"><strong>Contact</strong></a>
+                        <li>
+                            <a href="/forms"><strong>Links & Forms</strong></a>
+                        </li>
+                        <!-- <br> -->
+                        <li>
+                            <a href="/board_of_directors"><strong>Board of Directors</strong></a>
+                        </li>
+                        <!-- <br> -->
+                        <li>
+                            <a href="/contact"><strong>Contact</strong></a>
+                        </li>
 
                     </ul>
                     <div class="col-6 footer-copyright center-logo">

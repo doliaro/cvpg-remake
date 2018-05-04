@@ -6176,6 +6176,7 @@ footer.bottom-footer { min-height: 50px; line-height: 50px; }
 
 .footer-links { text-align: left; color: white; }
 .footer-links a { color: white; }
+.footer-links li { height: 20px; list-style: none; }
 
 .footer-copyright { text-align: center; color: white; }
 
