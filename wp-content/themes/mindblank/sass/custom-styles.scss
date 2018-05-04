@@ -7,7 +7,7 @@
 
 body {
   opacity: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   color: $dark;
   -moz-osx-font-smoothing: grayscale; // enable font-smoothing for browsers that support it
@@ -80,8 +80,9 @@ header.top-header {
       color: white;
       text-align: center;
       text-decoration: none;
-      font-family: 'Josefin Sans', sans-serif;
-      font-size: 16px;
+
+      font-family: 'Raleway', sans-serif;
+      font-size: 17px;
       font-weight: 400;
     }
 
