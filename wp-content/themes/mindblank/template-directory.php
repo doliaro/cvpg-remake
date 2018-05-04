@@ -87,6 +87,8 @@ include 'layout/brand.php';
                     <?php endwhile; ?>
                 </div>
                 <?php echo facetwp_display( 'pager' ); ?>
+                <div class="facetwp-pager"></div>
+                <button class="fwp-load-more">Load more</button>
             </div>
         <?php endif;?>
     </div>

@@ -17,13 +17,16 @@
                         </li>
 
                     </ul>
-                    <div class="col-6 footer-copyright center-logo">
-                        <p class="align-middle"> &copy; <?php echo date('Y'); ?> Copyright Citrus Valley Physicians Group</p>
-                    </div>
+
                     <div class="col footer-media center-logo">
                         <i class="fab fa-2x fa-twitter"></i>
                         <i class="fab fa-2x fa-facebook"></i>
                         <i class="fab fa-2x fa-linkedin"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col footer-copyright center-logo">
+                        <p class="align-middle"> &copy; <?php echo date('Y'); ?> Copyright Citrus Valley Physicians Group</p>
                     </div>
                 </div>
 			</footer>
