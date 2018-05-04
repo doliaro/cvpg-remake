@@ -6142,7 +6142,7 @@ header.top-header a.icons { margin-right: 10px; }
 .menu-center { width: 100%; background: #e68000; }
 .menu-center ul { padding: 0; margin: auto; list-style: none; margin: 20px 0px; }
 .menu-center ul li { float: left; padding: 0px 12px 11px; }
-.menu-center ul li a { display: block; color: white; text-align: center; text-decoration: none; font-family: 'Raleway', sans-serif; font-size: 17px; font-weight: 400; }
+.menu-center ul li a { display: block; color: white; text-align: center; text-decoration: none; font-family: 'Raleway', sans-serif; font-size: 17px; font-weight: 500; }
 .menu-center ul a:hover { color: #0b912f; }
 .menu-center .navbar-right { float: right !important; }
 
@@ -6181,6 +6181,8 @@ footer.bottom-footer { min-height: 50px; line-height: 50px; }
 .footer-copyright { text-align: center; color: white; }
 
 .footer-media { text-align: right; color: white; }
+
+.footer-mind { margin-left: auto; margin-right: auto; display: block; }
 
 .center-logo { align-self: center; }
 

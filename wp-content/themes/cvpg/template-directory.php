@@ -75,11 +75,17 @@ include 'layout/brand.php';
                                 </div>
 
                                 <div class="col-md-4">
-                                    <span>Phone: <?php $phone = get_field('phone'); echo $phone; ?></span>
+                                    <?php if(get_field('phone')) : ?>
+                                        <span>Phone: <?php $phone = get_field('phone'); echo $phone; ?></span>
+                                    <?php endif; ?>
                                     <br>
-                                    <span>Fax: <?php $fax = get_field('fax'); echo $fax; ?></span>
+                                    <?php if(get_field('fax')) : ?>
+                                        <span>Fax: <?php $fax = get_field('fax'); echo $fax; ?></span>
+                                    <?php endif; ?>
                                     <br>
-                                    <span>Hours: <?php $hours = get_field('hours'); echo $hours; ?></span>
+                                    <?php if(get_field('hours')) : ?>
+                                        <span>Hours: <?php $hours = get_field('hours'); echo $hours; ?></span>
+                                    <?php endif; ?>
                                 </div>
                                 <div class="col-md-4">
                                     <?php $address = get_field('address'); if ($address) : echo ucwords(strtolower($address['address']));  endif ?>
