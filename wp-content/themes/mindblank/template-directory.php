@@ -22,6 +22,7 @@ include 'layout/brand.php';
                     <?php echo facetwp_display( 'facet', 'specialist' ); ?>
                 <h5 id="ancillary-facet" class="facet-label"> Ancillary <i class="fas fa-chevron-down"></i></h5>
                     <?php echo facetwp_display( 'facet', 'ancillary' ); ?>
+
                 <!-- <h5 id="capitated-specialists-facet" class="facet-label"> Capitated Specialists <i class="fas fa-chevron-down"></i></h5>
                     <?php echo facetwp_display( 'facet', 'capitated_specialist' ); ?> -->
             </div>
@@ -39,7 +40,7 @@ include 'layout/brand.php';
           "post_status" => "publish",
           "orderby" => "title",
           "order" => "ASC",
-          "posts_per_page" => -1
+          "posts_per_page" => 10
         );
         $physicians = new WP_Query($dir_args);
         $directory = get_field('directory');
@@ -49,46 +50,46 @@ include 'layout/brand.php';
                 <div class="facetwp-template directory-section">
                     <?php while ( $physicians->have_posts()): $physicians->the_post(); ?>
                         <div class="container" style="border-top: solid 1px; padding: 20px;">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <h4>
-                                    <?php
-                                    $name = get_field('name');
-                                    $clean = ucwords(strtolower($name));?>
-                                   <a class="physician-name" href="<?php the_permalink(); ?>" title="<?php get_field('name'); ?>"><?php echo $clean; ?></a>
-                                </h4>
-                                <span><i><?php
-                                    $primary_care = get_field('primary_care');
-                                    $specialists = get_field('specialists');
-                                    $ancillary = get_field('ancillary');
-                                    $capitated_specialists = get_field('capitated_specialists');
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h4>
+                                        <?php
+                                        $name = get_field('name');
+                                        $clean = ucwords(strtolower($name));?>
+                                       <a class="physician-name" href="<?php the_permalink(); ?>" title="<?php get_field('name'); ?>"><?php echo $clean; ?></a>
+                                    </h4>
+                                    <span><i>
+                                        <?php $primary_care = get_field('primary_care');
+                                        $specialists = get_field('specialists');
+                                        $ancillary = get_field('ancillary');
+                                        $capitated_specialists = get_field('capitated_specialists');
 
-                                    echo ucfirst(strtolower($primary_care));
-                                    echo ucfirst(strtolower($specialists));
-                                    echo ucfirst(strtolower($ancillary));
-                                    echo ucfirst(strtolower($capitated_specialists));
-                                ?>
-                                </i></strong></span>
-                            </div>
+                                        echo ucfirst(strtolower($primary_care));
+                                        echo ucfirst(strtolower($specialists));
+                                        echo ucfirst(strtolower($ancillary));
+                                        echo ucfirst(strtolower($capitated_specialists)); ?>
+                                    </i></strong></span>
+                                </div>
 
-                            <div class="col-md-4">
-                                <span>Phone: <?php $phone = get_field('phone'); echo $phone; ?></span>
-                                <br>
-                                <span>Fax: <?php $fax = get_field('fax'); echo $fax; ?></span>
-                                <br>
-                                <span>Hours: <?php $hours = get_field('hours'); echo $hours; ?></span>
+                                <div class="col-md-4">
+                                    <span>Phone: <?php $phone = get_field('phone'); echo $phone; ?></span>
+                                    <br>
+                                    <span>Fax: <?php $fax = get_field('fax'); echo $fax; ?></span>
+                                    <br>
+                                    <span>Hours: <?php $hours = get_field('hours'); echo $hours; ?></span>
+                                </div>
+                                <div class="col-md-4">
+                                    <?php $address = get_field('address'); if ($address) : echo ucwords(strtolower($address['address']));  endif ?>
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <?php $address = get_field('address'); if ($address) : echo ucwords(strtolower($address['address']));  endif ?>
-                            </div>
-                        </div>
                         <br>
                         </div>
                     <?php endwhile; ?>
                 </div>
+                <!-- <div class="pagination pagination-centered">
+                    <?php mindwp_pagination(); ?>
+                </div> -->
                 <?php echo facetwp_display( 'pager' ); ?>
-                <div class="facetwp-pager"></div>
-                <button class="fwp-load-more">Load more</button>
             </div>
         <?php endif;?>
     </div>
