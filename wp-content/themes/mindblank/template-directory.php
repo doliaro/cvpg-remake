@@ -35,12 +35,15 @@ include 'layout/brand.php';
             hide_show_facets('#capitated-specialists-facet', '.facetwp-facet-capitated_specialist');
         </script>
         <?php
+
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $dir_args = array(
           "post_type" => "physicians",
           "post_status" => "publish",
           "orderby" => "title",
           "order" => "ASC",
-          "posts_per_page" => 10
+          "posts_per_page" => 10,
+          "paged" => $paged
         );
         $physicians = new WP_Query($dir_args);
         $directory = get_field('directory');
@@ -89,7 +92,23 @@ include 'layout/brand.php';
                 <!-- <div class="pagination pagination-centered">
                     <?php mindwp_pagination(); ?>
                 </div> -->
-                <?php echo facetwp_display( 'pager' ); ?>
+                <?php $total_pages = $physicians->max_num_pages;
+
+                    if ($total_pages > 1){
+
+                        $current_page = max(1, get_query_var('paged'));
+
+                        echo paginate_links(array(
+                            'base' => get_pagenum_link(1) . '%_%',
+                            'format' => '/page/%#%',
+                            'current' => $current_page,
+                            'total' => $total_pages,
+                            'prev_text'    => __('« prev'),
+                            'next_text'    => __('next »'),
+                        ));
+                    }
+                ?>
+                <!-- <?php echo facetwp_display( 'pager' ); ?> -->
             </div>
         <?php endif;?>
     </div>
