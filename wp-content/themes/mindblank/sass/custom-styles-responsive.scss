@@ -129,6 +129,21 @@
 
 }
 
+@media (min-width: 1300px) {
+  #menu{
+    max-width: 80%;
+    margin: 20px auto 0;
+  }
+}
+@media (min-width: 1650px) {
+  #menu{
+    max-width: 58%;
+    margin: 20px auto 0;
+  }
+}
+
+
+
 /* Define xs styles after defaults so they take precedence */
 
 .text-xs-left {

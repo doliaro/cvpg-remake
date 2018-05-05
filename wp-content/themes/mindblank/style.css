@@ -6141,7 +6141,7 @@ header.top-header a.icons { margin-right: 10px; }
 
 .menu-center { width: 100%; background: #e68000; }
 .menu-center ul { padding: 0; margin: auto; list-style: none; margin: 20px 0px; }
-.menu-center ul li { float: left; padding: 0px 12px 11px; }
+.menu-center ul li { float: left; padding: 0px 12px 11px; border-bottom: 3px solid green; }
 .menu-center ul li a { display: block; color: white; text-align: center; text-decoration: none; font-family: 'Raleway', sans-serif; font-size: 17px; font-weight: 500; }
 .menu-center ul a:hover { color: #0b912f; }
 .menu-center .navbar-right { float: right !important; }
@@ -6165,11 +6165,13 @@ header.top-header a.icons { margin-right: 10px; }
 
 .overlay-btn { background: transparent; color: black; border-color: black; }
 
+.overlay-btn:hover { border-color: #e68000; background-color: #e68000; }
+
 .welcome-text { margin: -75px 60px 85px 60px; text-align: center; }
 
 .welcome-title { font-size: 32px; }
 
-footer.footer { background: #F1F1F1; color: #fff; padding-top: 40px; }
+footer.footer { background: #F1F1F1; color: #fff; padding-bottom: 40px; padding-top: 40px; }
 footer.footer a { color: gainsboro; }
 
 footer.bottom-footer { min-height: 50px; line-height: 50px; }
@@ -6258,6 +6260,8 @@ aside.sidebar .sidebar-social svg { padding: 0 5px; }
   .cvpg-copyright { text-align: left; }
   .mind-credit { text-align: right; } }
 @media (min-width: 992px) and (max-width: 1200px) { .menu-center ul li a { font-size: 15px; } }
+@media (min-width: 1300px) { #menu { max-width: 80%; margin: 20px auto 0; } }
+@media (min-width: 1650px) { #menu { max-width: 58%; margin: 20px auto 0; } }
 /* Define xs styles after defaults so they take precedence */
 .text-xs-left { text-align: left; }
 

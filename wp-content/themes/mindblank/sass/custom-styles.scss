@@ -73,6 +73,7 @@ header.top-header {
     li {
       float: left;
       padding: 0px 12px 11px;
+      border-bottom: 3px solid green;
     }
 
     li a {
@@ -146,6 +147,11 @@ header.top-header {
   border-color: black;
 }
 
+.overlay-btn:hover{
+    border-color: #e68000;
+    background-color: #e68000;
+}
+
 //Home page text
 
 .welcome-text{
@@ -161,7 +167,7 @@ header.top-header {
 footer.footer {
   background: #F1F1F1;
   color: #fff;
-
+  padding-bottom:40px;
   padding-top: 40px;
   a {
     color: $light;
