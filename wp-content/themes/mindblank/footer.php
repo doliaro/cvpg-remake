@@ -26,32 +26,15 @@
                 </div>
                 <div class="container footer-copyright credit">
                     <div class="row">
-                        <div class="col-md-8 text-left">
+                        <div class="col-md-8 cvpg-copyright">
                             &copy; <?php echo date('Y'); ?> Copyright Copyright Citrus Valley Physicians Group
                         </div>
-                        <div class="col-md-4 text-right">
+                        <div class="col-md-4 mind-right">
                             <a href="//mind.sh/are"><img width="165px" src="<?php echo get_template_directory_uri(); ?>/img/mindshare.svg" alt="Mindshare Labs, Inc" class="credit"></a>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="row">
-                    <div class="col footer-copyright center-logo align-middle">
-                        <span> &copy; <?php echo date('Y'); ?> Copyright Citrus Valley Physicians Group </span>
-                        <span>
-                            <a href="//mind.sh/are">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/mindshare.svg" alt="Mindshare Labs, Inc" class="credit" />
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 footer-mind center-logo">
-                        <a href="//mind.sh/are"><img src="<?php echo get_template_directory_uri(); ?>/img/mindshare.svg" alt="Mindshare Labs, Inc" class="credit"></a>
-                    </div>
-                </div> -->
 			</footer>
-			<!-- /footer -->
-
 		</div>
 		<!-- /wrapper //Opened in layout/navigation.php-->
 

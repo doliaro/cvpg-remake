@@ -59,12 +59,18 @@
     bottom: 25px;
   }
   box.box-3{
-        margin-bottom: 55px;
-      }
+    margin-bottom: 55px;
+  }
+  .cvpg-copyright{
+    text-align: center;
+  }
+  .mind-credit {
+    text-align: center;
+  }
 }
 
 // Small styles - default: 480px <= x <= 991px
-@media (min-width: 576px) and (max-width: 992px) {
+@media (min-width: 692px) and (max-width: 992px) {
     .menu-center ul li a {
         font-size: 13px;
     }
@@ -101,6 +107,12 @@
     .footer-links{
       line-height: 1;
       font-size: 11px;
+    }
+    .cvpg-copyright{
+      text-align: left;
+    }
+    .mind-credit {
+      text-align: right;
     }
 }
 

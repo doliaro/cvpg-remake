@@ -6184,7 +6184,7 @@ footer.bottom-footer { min-height: 50px; line-height: 50px; }
 
 .footer-mind { margin-left: auto; margin-right: auto; display: block; }
 
-.center-logo { align-self: center; }
+.center-logo { margin-top: 10px; align-self: center; }
 
 .bypostauthor > article .fn:before { content: "\f408"; margin: 0 2px 0 -2px; position: relative; top: -1px; }
 
@@ -6242,8 +6242,10 @@ aside.sidebar .sidebar-social svg { padding: 0 5px; }
   .overlay-text { padding: 0px; font-size: 12px; } }
 @media (max-width: 692px) { .box { height: 210px; bottom: 23px; }
   .logo-img { height: 180px; bottom: 25px; }
-  box.box-3 { margin-bottom: 55px; } }
-@media (min-width: 576px) and (max-width: 992px) { .menu-center ul li a { font-size: 13px; }
+  box.box-3 { margin-bottom: 55px; }
+  .cvpg-copyright { text-align: center; }
+  .mind-credit { text-align: center; } }
+@media (min-width: 692px) and (max-width: 992px) { .menu-center ul li a { font-size: 13px; }
   .overlay-text { padding: 0px; font-size: 12px; }
   .box { height: 210px; bottom: 40px; }
   .box.box-3 { margin-bottom: 55px; }
@@ -6252,7 +6254,9 @@ aside.sidebar .sidebar-social svg { padding: 0 5px; }
   .header { height: 50px; }
   .footer-media { font-size: 9px; }
   .footer-copyright { font-size: 9px; }
-  .footer-links { line-height: 1; font-size: 11px; } }
+  .footer-links { line-height: 1; font-size: 11px; }
+  .cvpg-copyright { text-align: left; }
+  .mind-credit { text-align: right; } }
 @media (min-width: 992px) and (max-width: 1200px) { .menu-center ul li a { font-size: 15px; } }
 /* Define xs styles after defaults so they take precedence */
 .text-xs-left { text-align: left; }
