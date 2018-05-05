@@ -49,7 +49,7 @@ header.top-header {
 }
 
 .header {
-  background: #e68000;
+  backgroud: #e68000;
 }
 
 .slideout-menu{
@@ -94,6 +94,11 @@ header.top-header {
   .navbar-right {
     float: right !important;
   }
+}
+
+.menu-item:hover{
+    border-color: #e68000;
+    background-color: #e68000;
 }
 
 .navbar-nav{
@@ -145,11 +150,6 @@ header.top-header {
   background: transparent;
   color: black;
   border-color: black;
-}
-
-.overlay-btn:hover{
-    border-color: #e68000;
-    background-color: #e68000;
 }
 
 //Home page text

@@ -6133,7 +6133,7 @@ hr { width: 100%; }
 
 header.top-header a.icons { margin-right: 10px; }
 
-.header { background: #e68000; }
+.header { backgroud: #e68000; }
 
 .slideout-menu { background: #498360; }
 
@@ -6145,6 +6145,8 @@ header.top-header a.icons { margin-right: 10px; }
 .menu-center ul li a { display: block; color: white; text-align: center; text-decoration: none; font-family: 'Raleway', sans-serif; font-size: 17px; font-weight: 500; }
 .menu-center ul a:hover { color: #0b912f; }
 .menu-center .navbar-right { float: right !important; }
+
+.menu-item:hover { border-color: #e68000; background-color: #e68000; }
 
 .navbar-nav { background: #e68000; }
 
@@ -6164,8 +6166,6 @@ header.top-header a.icons { margin-right: 10px; }
 .overlay-icon { padding: 10px; }
 
 .overlay-btn { background: transparent; color: black; border-color: black; }
-
-.overlay-btn:hover { border-color: #e68000; background-color: #e68000; }
 
 .welcome-text { margin: -75px 60px 85px 60px; text-align: center; }
 
