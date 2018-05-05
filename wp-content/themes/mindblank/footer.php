@@ -30,7 +30,7 @@
                             &copy; <?php echo date('Y'); ?> Copyright Copyright Citrus Valley Physicians Group
                         </div>
                         <div class="col-md-4 text-right">
-                            <a href="//mind.sh/are"><img src="<?php echo get_template_directory_uri(); ?>/img/mindshare.svg" alt="Mindshare Labs, Inc" class="credit"></a>
+                            <a href="//mind.sh/are"><img width="165px" src="<?php echo get_template_directory_uri(); ?>/img/mindshare.svg" alt="Mindshare Labs, Inc" class="credit"></a>
                         </div>
                     </div>
                 </div>
