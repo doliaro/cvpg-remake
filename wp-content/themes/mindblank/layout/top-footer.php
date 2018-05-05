@@ -1,4 +1,3 @@
-
 </div><!--Close main container-->
 <footer class="footer container-fluid">
     <div class="container" style="text-align:center">

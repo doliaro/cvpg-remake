@@ -11,7 +11,9 @@ include 'layout/brand.php';
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <?php
                         $image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' );
+
                         $front_image_url = aq_resize($image_url, 2100, 1000, true, true, true);
+
                         ?>
                         <div class="banner">
                             <img width="100%" src="<?php echo $front_image_url; ?>" title="banner"/>
