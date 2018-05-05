@@ -1,5 +1,4 @@
 <header class="header">
-    <div class="container-fluid">
         <div class="row">
             <div class="col">
                 <nav class="navbar-nav navbar-dark navbar-expand-md bg-faded">
@@ -12,5 +11,4 @@
                 </nav>
             </div>
         </div>
-    </div>
 </header>
