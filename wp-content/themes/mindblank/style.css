@@ -6141,12 +6141,15 @@ header.top-header a.icons { margin-right: 10px; }
 
 .menu-center { width: 100%; background: #e68000; }
 .menu-center ul { padding: 0; margin: auto; list-style: none; margin: 20px 0px; }
-.menu-center ul li { float: left; padding: 0px 12px 11px; border-bottom: 3px solid green; }
+.menu-center ul li { float: left; padding: 0px 12px 11px; }
 .menu-center ul li a { display: block; color: white; text-align: center; text-decoration: none; font-family: 'Raleway', sans-serif; font-size: 17px; font-weight: 500; }
 .menu-center ul a:hover { color: #0b912f; }
 .menu-center .navbar-right { float: right !important; }
 
-.menu-item:hover { border-color: #e68000; background-color: #e68000; }
+.overlay-btn:hover { border-color: #e68000; background-color: #e68000; }
+
+.menu-center ul li:hover { /*border-color: #e68000;
+background-color: #e68000;*/ border-bottom: 3px solid green; }
 
 .navbar-nav { background: #e68000; }
 
