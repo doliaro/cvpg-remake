@@ -14,7 +14,7 @@ include 'layout/brand.php';
                         $front_image_url = aq_resize($image_url, 2100, 1000, true, true, true);
                         ?>
                         <div class="banner">
-                            <img src="<?php echo $front_image_url; ?>" title="banner"/>
+                            <img width="100%" src="<?php echo $front_image_url; ?>" title="banner"/>
                         </div>
 
                         <?php comments_template('', true);  ?>

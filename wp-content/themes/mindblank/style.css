@@ -6123,7 +6123,7 @@ body { opacity: 0; font-family: 'Josefin Sans', sans-serif; font-weight: 400; co
 
 body.fade-in { opacity: 1; }
 
-img { max-width: 100%; }
+img { max-width: none; }
 
 h1 { font-weight: 900; }
 
