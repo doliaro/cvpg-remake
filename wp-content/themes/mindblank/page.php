@@ -4,7 +4,7 @@ include 'layout/brand.php';
 ?>
 <main role="main" aria-label="Content" class="container">
     <div class="row">
-        <div class="col-xs-12 col-md-9">
+        <div class="col">
 
             <!-- section -->
             <section>
@@ -21,8 +21,6 @@ include 'layout/brand.php';
                         <?php comments_template('', true); // Remove if you don't want comments ?>
 
                         <br class="clear">
-
-                        <?php edit_post_link(); ?>
 
                     </article>
                     <!-- /article -->

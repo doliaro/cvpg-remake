@@ -6270,7 +6270,6 @@ aside.sidebar .sidebar-social svg { padding: 0 5px; }
 @media (min-width: 992px) and (max-width: 1200px) { .menu-center ul li a { font-size: 17px; } }
 @media (min-width: 892px) { .menu-center ul { margin: 20px -45px; }
   .menu-center ul li { padding: 0px 12px 16px; } }
-@media (min-width: 1650px) { #menu { max-width: 58%; margin: 20px auto 0; } }
 /* Define xs styles after defaults so they take precedence */
 .text-xs-left { text-align: left; }
 
