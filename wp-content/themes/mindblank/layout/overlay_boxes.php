@@ -53,17 +53,18 @@
                             </div>
                             <?php the_sub_field('title');?>
                             <br>
-                            <?php if (the_sub_field('text')) : ?>
-                                <div class="overlay-text">
-                                    <?php the_sub_field('text');?>
-                                </div>
-                            <?php endif ?>
+
                         <?php endwhile;
                     }
                 ?>
                 <br>
                 <div class="button-wrapper">
-                    <a href="/directory" class="overlay-btn btn btn-primary">Learn More</a>
+                    <?php if (the_sub_field('text')) : ?>
+                                <div class="overlay-text">
+                                    <?php the_sub_field('text');?>
+                                </div>
+                            <?php endif ?>
+                    <a href="/<?php echo get_sub_field('link');?>" class="overlay-btn btn btn-primary">Lsearn More</a>
                 </div>
             </div>
         </div>
