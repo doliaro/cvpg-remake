@@ -24,18 +24,20 @@
                         <i class="fab fa-2x fa-linkedin"></i>
                     </div>
                 </div>
-                <div class="container footer-copyright credit">
-                    <div class="row">
-                        <div class="col-md-8 cvpg-copyright">
-                            &copy; <?php echo date('Y'); ?> Copyright Copyright Citrus Valley Physicians Group
-                        </div>
-                        <div class="col-md-4 mind-right">
-                            <a href="//mind.sh/are"><img width="165px" src="<?php echo get_template_directory_uri(); ?>/img/mindshare.svg" alt="Mindshare Labs, Inc" class="credit"></a>
-                        </div>
-                    </div>
-                </div>
+
 			</footer>
 		</div>
+    </div>
+    <div class="container-fluid footer-copyright credit" style="background: #000;height:55px">
+        <div class="row">
+                <div class="col-md-8 cvpg-copyright">
+                    &copy; <?php echo date('Y'); ?> Copyright Copyright Citrus Valley Physicians Group
+                </div>
+                <div class="col-md-4 mind-right">
+                    <a href="//mind.sh/are"><img width="165px" src="<?php echo get_template_directory_uri(); ?>/img/mindshare_labs_asset.png" alt="Mindshare Labs, Inc" class="credit"></a>
+                </div>
+        </div>
+    </div>
 		<!-- /wrapper //Opened in layout/navigation.php-->
 
 		<?php wp_footer(); ?>

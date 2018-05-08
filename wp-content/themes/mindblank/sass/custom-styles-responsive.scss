@@ -129,10 +129,12 @@
 
 }
 
-@media (min-width: 1300px) {
-  #menu{
-    max-width: 80%;
-    margin: 15px auto 0;
+@media (min-width: 892px) {
+  .menu-center ul {
+    margin: 20px 0px;
+  }
+  .menu-center ul li {
+    padding: 0px 5px 5px;
   }
 }
 @media (min-width: 1650px) {

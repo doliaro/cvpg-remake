@@ -15,10 +15,6 @@
                         <?php endwhile;
                     }
                 ?>
-                <br>
-                <div class="button-wrapper">
-                    <a href="http://google.com" class="overlay-btn btn btn-primary">Learn More</a>
-                </div>
             </div>
             <div class="col-md-4 box box-2">
                 <?php

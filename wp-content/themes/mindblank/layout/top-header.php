@@ -1,4 +1,5 @@
 <header class="header">
+        <div class="container">
         <div class="row">
             <div class="col">
                 <nav class="navbar-nav navbar-dark navbar-expand-md bg-faded">
@@ -9,6 +10,7 @@
                         <?php cvpg_nav(); ?>
                     </div>
                 </nav>
+            </div>
             </div>
         </div>
 </header>
