@@ -5,7 +5,7 @@
                 <div class="row">
                     <ul class="col footer-links center-logo">
                         <li>
-                            <a href="wp-content-uploads-2018-05-affirmative_statement_memo_2018-pdf"><strong>Affirmative Statement</strong></a>
+                            <a href="wp-content/uploads/2018/05/Affirmative_Statement_Memo_2018.pdf"><strong>Affirmative Statement</strong></a>
                         </li>
                         <!-- <br> -->
                         <li>

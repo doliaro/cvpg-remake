@@ -9,11 +9,9 @@
                             </div>
                             <?php the_sub_field('title');?>
                             <br>
-                            <?php if (the_sub_field('text')) : ?>
-                                <div class="overlay-text">
-                                    <?php the_sub_field('text');?>
-                                </div>
-                            <?php endif ?>
+                            <div class="button-wrapper">
+                                <a href="/<?php echo the_sub_field('link');?>" class="overlay-btn btn btn-primary">Learn More</a>
+                            </div>
                         <?php endwhile;
                     }
                 ?>
@@ -31,18 +29,12 @@
                             </div>
                             <?php the_sub_field('title');?>
                             <br>
-                            <?php if (the_sub_field('text')) : ?>
-                                <div class="overlay-text">
-                                    <?php the_sub_field('text');?>
-                                </div>
-                            <?php endif ?>
+                            <div class="button-wrapper">
+                                <a href="/<?php echo the_sub_field('link');?>" class="overlay-btn btn btn-primary">Learn More</a>
+                            </div>
                         <?php endwhile;
                     }
                 ?>
-                <br>
-                <div class="button-wrapper">
-                    <a href="http://google.com" class="overlay-btn btn btn-primary">Learn More</a>
-                </div>
             </div>
             <div class="col-md-4 box box-3">
                 <?php
@@ -53,19 +45,12 @@
                             </div>
                             <?php the_sub_field('title');?>
                             <br>
-
+                            <div class="button-wrapper">
+                                <a href="/<?php echo the_sub_field('link');?>" class="overlay-btn btn btn-primary">Learn More</a>
+                            </div>
                         <?php endwhile;
                     }
                 ?>
-                <br>
-                <div class="button-wrapper">
-                    <?php if (the_sub_field('text')) : ?>
-                                <div class="overlay-text">
-                                    <?php the_sub_field('text');?>
-                                </div>
-                            <?php endif ?>
-                    <a href="/<?php echo get_sub_field('link');?>" class="overlay-btn btn btn-primary">Lsearn More</a>
-                </div>
             </div>
         </div>
     </div> <!-- container -->
