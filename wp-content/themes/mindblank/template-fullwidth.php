@@ -30,8 +30,13 @@ include 'layout/brand.php';
         </div>
     </main>
     <?php include 'layout/overlay_boxes.php'; ?>
+
     <div class="container">
+
         <div class="row">
+            <img class="aligncenter wp-image-1365 size-full"
+                 src="<?php echo get_template_directory_uri(); ?>/img/cvpg_br.png"
+                 alt="" width="1300" height="82" style="margin-bottom: 85px;margin-top: -110px;"/>
             <div class="col welcome-text">
                 <?php
                     if( have_rows('homepage_welcome_text') ){
@@ -47,6 +52,7 @@ include 'layout/brand.php';
                     }
                 ?>
             </div>
+
         </div>
     </div>
 <?php include 'layout/top-footer.php';
