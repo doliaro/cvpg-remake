@@ -6187,13 +6187,11 @@ footer.bottom-footer { min-height: 50px; line-height: 50px; }
 
 .footer-copyright { text-align: center; color: white; }
 
-.footer-media { text-align: right; color: white; }
+.footer-media { text-align: right; color: white; top: 20px; }
 
-/*.footer-mind{ margin-left: auto; margin-right: auto; display: block;
-}*/
 .cvpg-copyright, .mind-right { padding-top: 15px; }
 
-.center-logo { margin-top: 10px; align-self: center; }
+.center-logo { margin-bottom: 25px; align-self: center; }
 
 .bypostauthor > article .fn:before { content: "\f408"; margin: 0 2px 0 -2px; position: relative; top: -1px; }
 

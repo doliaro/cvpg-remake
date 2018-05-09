@@ -4,18 +4,16 @@
 			<footer class="bottom-footer container" role="contentinfo">
                 <div class="row">
                     <ul class="col footer-links center-logo">
+
+                        <li>
+                            <a href="/provider"><strong>Provider Information</strong></a>
+                        </li>
+                        <li>
+                            <a href="/member"><strong>Member Information</strong></a>
+                        </li>
                         <li>
                             <a href="wp-content/uploads/2018/05/Affirmative_Statement_Memo_2018.pdf"><strong>Affirmative Statement</strong></a>
                         </li>
-                        <!-- <br> -->
-                        <li>
-                            <a href="/board_of_directors"><strong>Board of Directors</strong></a>
-                        </li>
-                        <!-- <br> -->
-                        <li>
-                            <a href="/contact"><strong>Contact</strong></a>
-                        </li>
-
                     </ul>
 
                     <div class="col footer-media center-logo">
