@@ -32,12 +32,13 @@ include 'layout/brand.php';
     <?php include 'layout/overlay_boxes.php'; ?>
 
     <div class="container">
-
         <div class="row">
-            <img class="aligncenter wp-image-1365 size-full"
-                 src="<?php echo get_template_directory_uri(); ?>/img/cvpg_br.png"
-                 alt="" width="1300" height="82" style="margin-bottom: 85px;margin-top: -110px;"/>
             <div class="col welcome-text">
+                <div class="hidden-sm-down">
+                    <img class="aligncenter wp-image-1365 size-full"
+                    src="<?php echo get_template_directory_uri(); ?>/img/cvpg_br.png"
+                    alt="" width="1300" height="82" style="margin-bottom: 20px;margin-top: -10px;"/>
+                </div>
                 <?php
                     if( have_rows('homepage_welcome_text') ){
                         while ( have_rows('homepage_welcome_text') ) : the_row(); ?>

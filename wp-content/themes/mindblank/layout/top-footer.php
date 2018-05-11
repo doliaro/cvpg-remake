@@ -41,7 +41,7 @@
             </div>
             <div class="col center-logo">
                 <a href="http://www.easychoicehealthplan.com/" target="_blank">
-                    <img src="<?php echo get_template_directory_uri() . '/img/logos/EASY_CHOICE.png'; ?>">
+                    <img src="<?php echo get_template_directory_uri() . '/img/logos/easy_trans.png'; ?>">
                 </a>
             </div>
         </div>
