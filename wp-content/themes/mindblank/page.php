@@ -61,6 +61,24 @@ include 'layout/brand.php';
                         } ?>
 
 
+                        <?php if( have_rows('training_section')) {
+                            while( have_rows('training_section')) : the_row();?>
+                                <div class="training">
+                                    <h5 style="text-align: left;"><?php echo get_sub_field('training_section_header'); ?></h5>
+                                    <ul style="list-style: none;">
+                                        <?php while( have_rows('training_content')) : the_row(); ?>
+                                            <li>
+                                                <strong><u><a href="<?php echo get_sub_field('href'); ?>" target="_blank" rel="noopener"><?php echo get_sub_field('link_title'); ?>:</a></u></strong>
+                                                <?php echo get_sub_field('description'); ?>
+                                            </li>
+                                        <?php endwhile; ?>
+                                    </ul>
+                                </div>
+                                <?php the_sub_field('content');
+                            endwhile;
+                        } ?>
+
+
                         <?php the_content(); ?>
 
                         <?php comments_template('', true); // Remove if you don't want comments ?>
