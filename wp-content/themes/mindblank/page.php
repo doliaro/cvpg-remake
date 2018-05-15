@@ -22,40 +22,38 @@ include 'layout/brand.php';
                                 the_sub_field('content_title'); ?>
                                     <div class="container">
                                         <div class="row"> <?php
-                                            if( get_sub_field('show_boxes')){
-                                                if( have_rows('links')) {
-                                                    while( have_rows('links')) : the_row(); ?>
-                                                        <div class="col-4">
-                                                            <ul style="padding-left:0;">
-                                                                <li class="list-group-item"><h5>Links</h5></li>
+                                            if( get_sub_field('show_boxes')) :
+                                                if( have_rows('links')) : ?>
+                                                    <div class="col-4">
+                                                        <ul style="padding-left:0;">
+                                                            <li class="list-group-item"><h5>Links</h5></li>
+                                                            <?php while( have_rows('links')) : the_row(); ?>
                                                                 <li class="list-group-item"><strong><u><a href="<?php echo get_sub_field('href'); ?>"><?php echo get_sub_field('name'); ?></a></u></strong></li>
-                                                            </ul>
-                                                        </div>
-                                                    <?php endwhile;
-                                                }
-                                                if( have_rows('forms')) {
-                                                    while( have_rows('forms')) : the_row(); ?>
-                                                        <div class="col-4">
-                                                            <ul style="padding-left:0;">
-                                                                <li class="list-group-item"><h5>Forms</h5></li>
+                                                            <?php endwhile; ?>
+                                                        </ul>
+                                                    </div>
+                                                <?php endif;
+                                                if( have_rows('forms')) : ?>
+                                                    <div class="col-4">
+                                                        <ul style="padding-left:0;">
+                                                            <li class="list-group-item"><h5>Forms</h5></li>
+                                                            <?php while( have_rows('forms')) : the_row(); ?>
                                                                 <li class="list-group-item"><strong><u><a href="<?php echo get_sub_field('href'); ?>"><?php echo get_sub_field('name'); ?></a></u></strong></li>
-
-                                                            </ul>
-                                                        </div>
-                                                    <?php endwhile;
-                                                }
-                                                if( have_rows('pdfs')) {
-                                                    while( have_rows('pdfs')) : the_row(); ?>
-                                                        <div class="col-4">
-                                                            <ul style="padding-left:0;">
-                                                                <li class="list-group-item"><h5>PDF</h5></li>
+                                                            <?php endwhile; ?>
+                                                        </ul>
+                                                    </div>
+                                                <?php endif;
+                                                if( have_rows('pdfs')) : ?>
+                                                    <div class="col-4">
+                                                        <ul style="padding-left:0;">
+                                                            <li class="list-group-item"><h5>PDF</h5></li>
+                                                            <?php while( have_rows('pdfs')) : the_row(); ?>
                                                                 <li class="list-group-item"><strong><u><a href="<?php echo get_sub_field('href'); ?>"><?php echo get_sub_field('name'); ?></a></u></strong></li>
-
-                                                            </ul>
-                                                        </div>
-                                                    <?php endwhile;
-                                            }
-                                        } ?>
+                                                            <?php endwhile; ?>
+                                                        </ul>
+                                                    </div>
+                                                <?php endif; ?>
+                                            <?php endif; ?>
                                         </div>
                                     </div> <?php
                                 the_sub_field('content');
