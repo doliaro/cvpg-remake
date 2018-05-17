@@ -6150,10 +6150,9 @@ header.top-header a.icons { margin-right: 10px; }
 
 .overlay-btn:hover { border-color: #e68000; background-color: #e68000; }
 
-.menu-center ul li:hover { /*border-color: #e68000;
-background-color: #e68000;*/ border-bottom: 3px solid green; }
-
 .navbar-nav { background: #e68000; }
+
+.dropdown-menu.show { top: -5px !important; left: 33px !important; background-color: #e68000; }
 
 .box { border: solid 1px; height: auto; position: relative; bottom: 156px; text-align: center; color: black; }
 .box.box-1 { background: rgba(233, 200, 66, 0.8); }

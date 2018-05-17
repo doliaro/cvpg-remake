@@ -105,14 +105,14 @@ header.top-header {
   background-color: #e68000;
 }
 
-.menu-center ul li:hover{
-    /*border-color: #e68000;
-    background-color: #e68000;*/
-    border-bottom: 3px solid green;
-}
-
 .navbar-nav{
   background: #e68000;
+}
+
+.dropdown-menu.show{
+  top: -5px !important;
+  left: 33px !important;
+  background-color: #e68000;
 }
 
 //Front page content overlay
