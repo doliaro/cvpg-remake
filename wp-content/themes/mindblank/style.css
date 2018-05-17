@@ -6228,7 +6228,10 @@ aside.sidebar .sidebar-social svg { padding: 0 5px; }
 
 .physician-name { font-size: 19px; }
 
-.facetwp-checkbox { font-size: 13px; }
+.facetwp-checkbox { font-size: 17px; }
+.facetwp-checkbox p { font-size: 13px; }
+
+.facet-widget { width: 355px; }
 
 .acf-map { width: 70%; height: 400px; border: #ccc solid 1px; }
 

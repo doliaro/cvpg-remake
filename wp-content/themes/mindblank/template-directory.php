@@ -14,8 +14,9 @@ include 'layout/brand.php';
             <div class="facet-widget">
                 <h5 id="search-facet" class="facet-label"> Search </h5>
                     <?php echo facetwp_display( 'facet', 'search' ); ?>
-                <h5 id="region-facet" class="facet-label"> Regions <i class="fas fa-chevron-down"></i></h5>
+                <h5 id="region-facet" class="facet-label"> Regions <i class="fas fa-chevron-down"></i> <div class="region-desc"></div></h5>
                     <?php echo facetwp_display( 'facet', 'regions' ); ?>
+
                 <h5 id="primary-care-facet" class="facet-label"> Primary Care <i class="fas fa-chevron-down"></i></h5>
                     <?php echo facetwp_display( 'facet', 'primary_care' ); ?>
                 <h5 id="specialists-facet" class="facet-label"> Specialists <i class="fas fa-chevron-down"></i></h5>
