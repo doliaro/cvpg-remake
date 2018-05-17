@@ -23,9 +23,8 @@ include 'layout/brand.php';
                     <?php echo facetwp_display( 'facet', 'specialist' ); ?>
                 <h5 id="ancillary-facet" class="facet-label"> Ancillary <i class="fas fa-chevron-down"></i></h5>
                     <?php echo facetwp_display( 'facet', 'ancillary' ); ?>
-
-                <!-- <h5 id="capitated-specialists-facet" class="facet-label"> Capitated Specialists <i class="fas fa-chevron-down"></i></h5>
-                    <?php echo facetwp_display( 'facet', 'capitated_specialist' ); ?> -->
+                <h5 id="capitated-specialists-facet" class="facet-label"> Capitated Specialists <i class="fas fa-chevron-down"></i></h5>
+                    <?php echo facetwp_display( 'facet', 'capitated_specialist' ); ?>
             </div>
         </div>
         <script>
@@ -59,7 +58,7 @@ include 'layout/brand.php';
                                     <h4>
                                         <?php
                                         $name = get_field('name');
-                                        $clean = ucwords(strtolower($name));?>
+                                        $clean = ucwords(strtoupper($name));?>
                                        <a class="physician-name" href="<?php the_permalink(); ?>" title="<?php get_field('name'); ?>"><?php echo $clean; ?></a>
                                     </h4>
                                     <span><i>
@@ -68,10 +67,18 @@ include 'layout/brand.php';
                                         $ancillary = get_field('ancillary');
                                         $capitated_specialists = get_field('capitated_specialists');
 
-                                        echo ucfirst(strtolower($primary_care));
-                                        echo ucfirst(strtolower($specialists));
-                                        echo ucfirst(strtolower($ancillary));
-                                        echo ucfirst(strtolower($capitated_specialists)); ?>
+                                        // Uppercase names
+                                        echo ucfirst(strtoupper($primary_care));
+                                        echo ucfirst(strtoupper($specialists));
+                                        echo ucfirst(strtoupper($ancillary));
+                                        echo ucfirst(strtoupper($capitated_specialists));
+
+
+                                        // Lowercase names
+                                        // echo ucfirst(strtolower($primary_care));
+                                        // echo ucfirst(strtolower($specialists));
+                                        // echo ucfirst(strtolower($ancillary));
+                                        // echo ucfirst(strtolower($capitated_specialists)); ?>
                                     </i></strong></span>
                                 </div>
 
