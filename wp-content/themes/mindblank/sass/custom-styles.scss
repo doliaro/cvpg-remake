@@ -339,11 +339,10 @@ aside.sidebar {
   text-transform: lowercase;
   p {
     font-size: 13px;
-    text-transform: uppercase;
   }
 }
 
-.facetwp-checkbox:first-letter {
+.facetwp-checkbox:first-letter p {
   text-transform: uppercase;
   p{ text-transform: uppercase;}
 }
