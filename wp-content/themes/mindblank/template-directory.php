@@ -61,7 +61,7 @@ include 'layout/brand.php';
                                         $clean = ucwords(strtoupper($name));?>
                                        <a class="physician-name" href="<?php the_permalink(); ?>" title="<?php get_field('name'); ?>"><?php echo $clean; ?></a>
                                     </h4>
-                                    <span><i>
+                                    <span class="physician-speciality">
                                         <?php $primary_care = get_field('primary_care');
                                         $specialists = get_field('specialists');
                                         $ancillary = get_field('ancillary');
@@ -79,7 +79,7 @@ include 'layout/brand.php';
                                         // echo ucfirst(strtolower($specialists));
                                         // echo ucfirst(strtolower($ancillary));
                                         // echo ucfirst(strtolower($capitated_specialists)); ?>
-                                    </i></strong></span>
+                                    </span>
                                 </div>
 
                                 <div class="col-md-4">
