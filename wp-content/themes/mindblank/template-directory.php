@@ -16,7 +16,6 @@ include 'layout/brand.php';
                     <?php echo facetwp_display( 'facet', 'search' ); ?>
                 <h5 id="region-facet" class="facet-label"> Regions <i class="fas fa-chevron-down"></i> <div class="region-desc"></div></h5>
                     <?php echo facetwp_display( 'facet', 'regions' ); ?>
-
                 <h5 id="primary-care-facet" class="facet-label"> Primary Care <i class="fas fa-chevron-down"></i></h5>
                     <?php echo facetwp_display( 'facet', 'primary_care' ); ?>
                 <h5 id="specialists-facet" class="facet-label"> Specialists <i class="fas fa-chevron-down"></i></h5>
@@ -61,7 +60,7 @@ include 'layout/brand.php';
                                         $clean = ucwords(strtoupper($name));?>
                                        <a class="physician-name" href="<?php the_permalink(); ?>" title="<?php get_field('name'); ?>"><?php echo $clean; ?></a>
                                     </h4>
-                                    <span class="physician-speciality">
+                                    <span class="physician-speciality"><i>
                                         <?php $primary_care = get_field('primary_care');
                                         $specialists = get_field('specialists');
                                         $ancillary = get_field('ancillary');
@@ -73,13 +72,12 @@ include 'layout/brand.php';
                                         echo ucfirst(strtoupper($ancillary));
                                         echo ucfirst(strtoupper($capitated_specialists));
 
-
                                         // Lowercase names
                                         // echo ucfirst(strtolower($primary_care));
                                         // echo ucfirst(strtolower($specialists));
                                         // echo ucfirst(strtolower($ancillary));
                                         // echo ucfirst(strtolower($capitated_specialists)); ?>
-                                    </span>
+                                    </i></span>
                                 </div>
 
                                 <div class="col-md-4">

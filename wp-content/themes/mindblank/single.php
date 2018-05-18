@@ -9,12 +9,19 @@ include 'layout/brand.php';
                 <div class="row">
                     <div class="col-10">
                         <h3>
-                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                            <?php $name = get_field('name');
+                            $clean = ucwords(strtoupper($name)); echo $clean;?>
                         </h3>
-                        <h5><?php $primary_care = the_field('primary_care');
-                              $specialists = the_field('specialists');
-                              $ancillary = the_field('ancillary');
-                              $capitated_specialists = the_field('capitated_specialists');?>
+                        <h5>
+                            <?php $primary_care = get_field('primary_care');
+                            $specialists = get_field('specialists');
+                            $ancillary = get_field('ancillary');
+                            $capitated_specialists = get_field('capitated_specialists');
+
+                            echo ucfirst(strtoupper($primary_care));
+                            echo ucfirst(strtoupper($specialists));
+                            echo ucfirst(strtoupper($ancillary));
+                            echo ucfirst(strtoupper($capitated_specialists));?>
                         </h5>
                         <p>Phone: <?php $phone = get_field('phone'); echo $phone; ?>
                         <br>Fax: <?php $fax = get_field('fax'); echo $fax; ?>
