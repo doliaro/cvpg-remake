@@ -6226,7 +6226,9 @@ aside.sidebar .sidebar-social svg { padding: 0 5px; }
 
 .logo { text-align: center; }
 
-.physician-name { font-size: 19px; }
+.physician-name { font-size: 16px; }
+
+.physician-speciality { font-size: 14px; }
 
 .facetwp-checkbox { font-size: 17px; }
 .facetwp-checkbox p { font-size: 13px; }
