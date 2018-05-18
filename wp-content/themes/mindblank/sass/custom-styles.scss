@@ -340,7 +340,10 @@ aside.sidebar {
   p {font-size: 13px;}
 }
 
-.facetwp-checkbox:first-letter { text-transform: uppercase; }
+.facetwp-checkbox:first-letter {
+  text-transform: uppercase;
+  p{ text-transform: uppercase;}
+}
 
 .facet-widget{
   width: 355px;
