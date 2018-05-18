@@ -6230,11 +6230,8 @@ aside.sidebar .sidebar-social svg { padding: 0 5px; }
 
 .physician-speciality { font-size: 14px; }
 
-.facetwp-checkbox { font-size: 17px; text-transform: lowercase; }
+.facetwp-checkbox { font-size: 17px; }
 .facetwp-checkbox p { font-size: 13px; }
-
-.facetwp-checkbox:first-letter p { text-transform: uppercase; }
-.facetwp-checkbox:first-letter p p { text-transform: uppercase; }
 
 .facet-widget { width: 355px; }
 
