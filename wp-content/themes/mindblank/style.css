@@ -6231,7 +6231,7 @@ aside.sidebar .sidebar-social svg { padding: 0 5px; }
 .physician-speciality { font-size: 14px; }
 
 .facetwp-checkbox { font-size: 17px; text-transform: lowercase; }
-.facetwp-checkbox p { font-size: 13px; }
+.facetwp-checkbox p { font-size: 13px; text-transform: uppercase; }
 
 .facetwp-checkbox:first-letter { text-transform: uppercase; }
 .facetwp-checkbox:first-letter p { text-transform: uppercase; }

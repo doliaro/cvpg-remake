@@ -337,7 +337,10 @@ aside.sidebar {
 .facetwp-checkbox {
   font-size: 17px;
   text-transform: lowercase;
-  p {font-size: 13px;}
+  p {
+    font-size: 13px;
+    text-transform: uppercase;
+  }
 }
 
 .facetwp-checkbox:first-letter {
