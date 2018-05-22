@@ -79,7 +79,7 @@ include 'layout/brand.php';
                                         // echo ucfirst(strtolower($capitated_specialists)); ?>
                                     </strong></i></span>
                                     <br>
-                                    <span><i>
+                                    <span class="physician-group"><i>
                                         <?php if(get_field('group')) : ?>
                                             <span><?php $group = get_field('group'); echo $group; ?></span>
                                         <?php endif; ?>
