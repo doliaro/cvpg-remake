@@ -60,7 +60,7 @@ include 'layout/brand.php';
                                         $clean = ucwords(strtoupper($name));?>
                                        <a class="physician-name" href="<?php the_permalink(); ?>" title="<?php get_field('name'); ?>"><?php echo $clean; ?></a>
                                     </h4>
-                                    <span class="physician-speciality"><i>
+                                    <span class="physician-speciality"><i><strong>
                                         <?php $primary_care = get_field('primary_care');
                                         $specialists = get_field('specialists');
                                         $ancillary = get_field('ancillary');
@@ -77,6 +77,11 @@ include 'layout/brand.php';
                                         // echo ucfirst(strtolower($specialists));
                                         // echo ucfirst(strtolower($ancillary));
                                         // echo ucfirst(strtolower($capitated_specialists)); ?>
+                                    </strong></i></span>
+                                    <span><i>
+                                        <?php if(get_field('group')) : ?>
+                                            <span><?php $group = get_field('group'); echo $group; ?></span>
+                                        <?php endif; ?>
                                     </i></span>
                                 </div>
 
@@ -92,7 +97,7 @@ include 'layout/brand.php';
                                     <?php if(get_field('hours')) : ?>
                                         <span class="hours-directory">
                                             Hours: <?php $hours = get_field('hours');
-                                            $hours = str_replace(",", "\n", $hours);
+                                            $hours = str_replace(",", "<br>", $hours);
                                             echo $hours; ?></span>
                                     <?php endif; ?>
                                 </div>
