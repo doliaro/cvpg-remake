@@ -78,6 +78,7 @@ include 'layout/brand.php';
                                         // echo ucfirst(strtolower($ancillary));
                                         // echo ucfirst(strtolower($capitated_specialists)); ?>
                                     </strong></i></span>
+                                    <br>
                                     <span><i>
                                         <?php if(get_field('group')) : ?>
                                             <span><?php $group = get_field('group'); echo $group; ?></span>
@@ -87,16 +88,16 @@ include 'layout/brand.php';
 
                                 <div class="col-md-5">
                                     <?php if(get_field('phone')) : ?>
-                                        <span>Phone: <?php $phone = get_field('phone'); echo $phone; ?></span>
+                                        <span><strong>Phone: </strong><?php $phone = get_field('phone'); echo $phone; ?></span>
                                     <?php endif; ?>
                                     <br>
                                     <?php if(get_field('fax')) : ?>
-                                        <span>Fax: <?php $fax = get_field('fax'); echo $fax; ?></span>
+                                        <span><strong>Fax: </strong><?php $fax = get_field('fax'); echo $fax; ?></span>
                                     <?php endif; ?>
                                     <br>
                                     <?php if(get_field('hours')) : ?>
                                         <span class="hours-directory">
-                                            Hours: <?php $hours = get_field('hours');
+                                            <strong> Hours: </strong><?php $hours = get_field('hours');
                                             $hours = str_replace(",", "<br>", $hours);
                                             echo $hours; ?></span>
                                     <?php endif; ?>
