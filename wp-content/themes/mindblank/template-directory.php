@@ -90,7 +90,10 @@ include 'layout/brand.php';
                                     <?php endif; ?>
                                     <br>
                                     <?php if(get_field('hours')) : ?>
-                                        <span>Hours: <?php $hours = get_field('hours'); echo $hours; ?></span>
+                                        <span class="hours-directory">
+                                            Hours: <?php $hours = get_field('hours');
+                                            $hours_br = str_replace(',', '<br />', $hours);
+                                            echo $hours_br; ?></span>
                                     <?php endif; ?>
                                 </div>
                                 <div class="col-md-4">
