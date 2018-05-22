@@ -23,10 +23,22 @@ include 'layout/brand.php';
                             echo ucfirst(strtoupper($ancillary));
                             echo ucfirst(strtoupper($capitated_specialists));?>
                         </h5>
-                        <p>Phone: <?php $phone = get_field('phone'); echo $phone; ?>
+                        <!-- <p>Phone: <?php $phone = get_field('phone'); echo $phone; ?>
                         <br>Fax: <?php $fax = get_field('fax'); echo $fax; ?>
                         </p>
-                        <p><?php $address = get_field('address'); echo $address['address'];?></p>
+                        <p><?php $address = get_field('address'); echo $address['address'];?></p> -->
+
+                        <?php if(get_field('phone')) : ?>
+                            <span>Phone: <?php $phone = get_field('phone'); echo $phone; ?></span>
+                        <?php endif; ?>
+                        <br>
+                        <?php if(get_field('fax')) : ?>
+                            <span>Fax: <?php $fax = get_field('fax'); echo $fax; ?></span>
+                        <?php endif; ?>
+                        <br>
+                        <?php if(get_field('hours')) : ?>
+                            <span>Hours: <?php $hours = get_field('hours'); echo $hours; ?></span>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <?php if (has_post_thumbnail()) : ?>

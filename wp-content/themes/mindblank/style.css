@@ -6200,7 +6200,7 @@ footer.bottom-footer { min-height: 50px; line-height: 50px; }
 
 .content { margin-bottom: 60px; }
 
-.staff-name { margin-bottom: 1px; }
+.staff-name { margin-bottom: 1px; margin-top: 12px; }
 
 .staff-title { margin-bottom: 10px; font-size: 14px; }
 

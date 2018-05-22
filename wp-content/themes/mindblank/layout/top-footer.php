@@ -9,14 +9,14 @@
             </div>
             <div class="col center-logo">
                 <a href="http://www.cigna.com/" target="_blank">
-                    <img src="<?php echo get_template_directory_uri() . '/img/logos/cigna.png'; ?>">
+                    <img src="<?php echo get_template_directory_uri() . '/img/logos/cigna_trans.png'; ?>">
                 </a>
             </div>
-            <div class="col center-logo">
+           <!--  <div class="col center-logo">
                 <a href="https://www.humana.com/" target="_blank">
                     <img src="<?php echo get_template_directory_uri() . '/img/logos/humana_logo.png'; ?>">
                 </a>
-            </div>
+            </div> -->
             <div class="col center-logo">
                 <a href="https://www.blueshieldca.com/home" target="_blank">
                     <img src="<?php echo get_template_directory_uri() . '/img/logos/BS_w_slogan.png'; ?>">

@@ -18,7 +18,7 @@ include 'layout/brand.php';
                         <h1 class="entry-title page-title" itemprop="headline"><?php the_title(); ?></h1>
                         <h3 class="entry-sub-title"><?php the_field('sub_title'); ?></h3>
 
-                        <hr class="horiz-line">
+                        <img class="aligncenter wp-image-1365 size-full" style="padding-bottom: 35px;" src="http://cvpg.mindsharedevelopment.com/wp-content/uploads/2018/05/cvpg.png" alt="" width="1300" height="82" />
 
 
                     </header>
