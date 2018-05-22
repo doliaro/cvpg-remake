@@ -92,7 +92,7 @@ include 'layout/brand.php';
                                     <?php if(get_field('hours')) : ?>
                                         <span class="hours-directory">
                                             Hours: <?php $hours = get_field('hours');
-                                            $hours_br = str_replace(',', '<br />', $hours);
+                                            $hours_br = str_replace(' , ', '<br />', $hours);
                                             echo $hours_br; ?></span>
                                     <?php endif; ?>
                                 </div>
