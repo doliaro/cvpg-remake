@@ -8,9 +8,9 @@ include 'layout/brand.php';
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtGfWMP7UZ-0k3oPapHlWLEQkCbsmFno4"></script>
 
-<div class="container" style="padding: 20px;">
+<div class="container-fluid" style="padding: 20px;">
     <div class="row">
-        <div id="main" class="col-md-3">
+        <div id="main" class="col-md-3 offset-md-1">
             <div class="facet-widget">
                 <h5 id="search-facet" class="facet-label"> Search </h5>
                     <?php echo facetwp_display( 'facet', 'search' ); ?>
@@ -27,6 +27,7 @@ include 'layout/brand.php';
             </div>
         </div>
         <script>
+
             hide_show_facets('#region-facet', '.facetwp-facet-regions');
             hide_show_facets('#primary-care-facet', '.facetwp-facet-primary_care');
             hide_show_facets('#specialists-facet', '.facetwp-facet-specialist');
@@ -48,7 +49,7 @@ include 'layout/brand.php';
         $directory = get_field('directory');
 
         if($physicians->have_posts()) : ?>
-            <div id="main" class="col-md-8 offset-md-1">
+            <div id="main" class="col-md-7">
                 <div class="facetwp-template directory-section">
                     <?php while ( $physicians->have_posts()): $physicians->the_post(); ?>
                         <div class="container" style="border-top: solid 1px; padding: 20px;">

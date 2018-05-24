@@ -6232,10 +6232,12 @@ aside.sidebar .sidebar-social svg { padding: 0 5px; }
 
 .physician-group { font-size: 13px; }
 
-.facetwp-checkbox { font-size: 14px; text-transform: uppercase; }
-.facetwp-checkbox p { font-size: 11px; }
+.facetwp-checkbox { font-size: 18px; text-transform: uppercase; }
+.facetwp-checkbox p { font-size: 14px; }
 
 .facet-widget { width: 355px; }
+
+.facet-label { font-size: 21px; }
 
 .acf-map { width: 70%; height: 400px; border: #ccc solid 1px; }
 
