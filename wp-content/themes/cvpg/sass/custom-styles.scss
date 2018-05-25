@@ -226,7 +226,7 @@ footer.bottom-footer {
 
 .bypostauthor > article .fn:before {
   content: "\f408";
-  margin: 0 2px 0 -2px;
+  margin: 0 2px 0 -1px;
   position: relative;
   top: -1px;
 }
@@ -259,18 +259,15 @@ footer.bottom-footer {
 
 .alignleft, img.alignleft {
   float: left;
-
 }
 
 .alignright, img.alignright {
   float: right;
-
 }
 
 .aligncenter, img.aligncenter {
   float: none;
   height: auto;
-
 }
 
 .alignnone, img.alignnone {
@@ -326,9 +323,8 @@ aside.sidebar {
   text-align: center;
 }
 
+
 // Directory
-
-
 .physician-name{
   font-size: 16px;
 }

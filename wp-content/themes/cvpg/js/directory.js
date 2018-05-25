@@ -18,7 +18,7 @@ function hide_show_facets(facet_id, facet_class){
 jQuery(document).ready(function() {
     setTimeout(function() {
         jQuery('.facetwp-autocomplete-update').attr('value', 'Go!');
-        jQuery('.facetwp-checkbox[data-value=1]').append("<p><i>Montclair, Pomona, Fontana, Chino Hills, San Bernardino County and surrounding areas</i></p>");
+        jQuery('.facetwp-checkbox[data-value=region_1]').append("<p><i>Montclair, Pomona, Fontana, Chino Hills, San Bernardino County and surrounding areas</i></p>");
         jQuery('.facetwp-checkbox[data-value=2]').append("<p><i>Covina, West Covina, Baldwin Park, El Monte, La Puente, Glendora, Azusa, Hacienda Heights, Rowland Heights and Whittier</i></p>");
         jQuery('.facetwp-checkbox[data-value=3]').append("<p><i>Arcadia, Duarte and Monrovia</i></p>");
         jQuery('.facetwp-checkbox[data-value=4]').append("<p><i>San Gabriel Valley, Inland Empire, Glendale and San Fernando Valley</i></p>");

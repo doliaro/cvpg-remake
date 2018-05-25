@@ -6194,7 +6194,7 @@ footer.bottom-footer { min-height: 50px; line-height: 50px; }
 
 .center-logo { margin-bottom: 25px; align-self: center; }
 
-.bypostauthor > article .fn:before { content: "\f408"; margin: 0 2px 0 -2px; position: relative; top: -1px; }
+.bypostauthor > article .fn:before { content: "\f408"; margin: 0 2px 0 -1px; position: relative; top: -1px; }
 
 .staff-members { margin-bottom: 35px; margin: auto; }
 
