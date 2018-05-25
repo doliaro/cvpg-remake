@@ -54,7 +54,7 @@ include 'layout/brand.php';
                     <?php while ( $physicians->have_posts()): $physicians->the_post(); ?>
                         <div class="container" style="border-bottom: solid 1px; padding: 20px;">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-5">
                                     <h4>
                                         <?php
                                         $name = get_field('name');
@@ -87,7 +87,7 @@ include 'layout/brand.php';
                                     </i></span>
                                 </div>
 
-                                <div class="col-md-5">
+                                <div class="col-md-4">
                                     <?php if(get_field('phone')) : ?>
                                         <span><strong>Phone: </strong><?php $phone = get_field('phone'); echo $phone; ?></span>
                                     <?php endif; ?>
