@@ -6230,12 +6230,14 @@ aside.sidebar .sidebar-social svg { padding: 0 5px; }
 
 .physician-name { font-size: 16px; }
 
-.physician-speciality { font-size: 14px; }
+.physician-speciality { font-size: 14px; color: #e68000; }
 
-.physician-group { font-size: 13px; }
+.physician-group { font-size: 13px; color: #024f23; }
 
-.facetwp-checkbox { font-size: 18px; color: #024f23; }
-.facetwp-checkbox p { font-size: 16px; color: #e68000; }
+.facetwp-checkbox { font-size: 18px; }
+.facetwp-checkbox p { font-size: 16px; }
+
+.facetwp-autocomplete-update { color: #e68000; }
 
 .facet-widget { width: auto; }
 

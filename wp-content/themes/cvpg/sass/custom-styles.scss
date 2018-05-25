@@ -331,19 +331,25 @@ aside.sidebar {
 
 .physician-speciality{
   font-size: 14px;
+  color: #e68000;
 }
 
 .physician-group{
   font-size: 13px;
+  color: #024f23;
 }
 
 .facetwp-checkbox {
   font-size: 18px;
-  color: #024f23;
+
   p {
     font-size: 16px;
-    color: #e68000;;
+
   }
+}
+
+.facetwp-autocomplete-update{
+  color: #e68000;
 }
 
 .facet-widget{
