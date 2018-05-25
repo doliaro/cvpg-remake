@@ -4,7 +4,6 @@
 			<footer class="bottom-footer container" role="contentinfo">
                 <div class="row">
                     <ul class="col footer-links center-logo">
-
                         <li>
                             <a href="/provider"><strong>Provider Information</strong></a>
                         </li>
@@ -22,12 +21,11 @@
                         <i class="fab fa-2x fa-linkedin"></i>
                     </div>
                 </div>
-
 			</footer>
 		</div>
     </div>
-    <div class="container-fluid footer-copyright credit" style="background: #000;height:55px">
-        <div class="row">
+    <div class="container-fluid footer-copyright credit" style="height:55px">
+        <div class="row" style="background: #000;">
                 <div class="col-md-8 cvpg-copyright">
                     &copy; <?php echo date('Y'); ?> Copyright Copyright Citrus Valley Physicians Group
                 </div>
