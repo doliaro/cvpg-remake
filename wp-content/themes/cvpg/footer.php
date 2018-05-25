@@ -27,7 +27,7 @@
     <div class="container-fluid footer-copyright credit" style="height:55px">
         <div class="row" style="background: #000;">
                 <div class="col-md-8 cvpg-copyright">
-                    &copy; <?php echo date('Y'); ?> Copyright Copyright Citrus Valley Physicians Group
+                    &copy; <?php echo date('Y'); ?> Copyright Citrus Valley Physicians Group
                 </div>
                 <div class="col-md-4 mind-right">
                     <a href="//mind.sh/are"><img width="165px" src="<?php echo get_template_directory_uri(); ?>/img/mindshare_labs_asset.png" alt="Mindshare Labs, Inc" class="credit"></a>
