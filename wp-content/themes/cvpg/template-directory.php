@@ -52,7 +52,7 @@ include 'layout/brand.php';
             <div id="main" class="col-md-7">
                 <div class="facetwp-template directory-section">
                     <?php while ( $physicians->have_posts()): $physicians->the_post(); ?>
-                        <div class="container" style="border-top: solid 1px; padding: 20px;">
+                        <div class="container" style="border-bottom: solid 1px; padding: 20px;">
                             <div class="row">
                                 <div class="col-md-4">
                                     <h4>
